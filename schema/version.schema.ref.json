@@ -1,0 +1,8 @@
+{
+    "$id": "https://qt.io/qt-creator/schemas/version.schema.ref.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Plugin Version field schema",
+    "description": "Schema for a plugins version number",
+    "type": "string",
+    "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+}

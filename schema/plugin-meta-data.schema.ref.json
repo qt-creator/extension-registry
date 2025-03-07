@@ -1,0 +1,140 @@
+{
+    "$id": "https://qt.io/qt-creator/schemas/plugin-meta-data.schema.ref.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Plugin metadata schema",
+    "description": "Schema for a plugins meta data",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "Id": {
+            "type": "string",
+            "pattern": "^[a-z]+$"
+        },
+        "Url": {
+            "type": "string"
+        },
+        "Name": {
+            "type": "string"
+        },
+        "Tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "Type": {
+            "type": "string",
+            "const": "Script"
+        },
+        "Vendor": {
+            "type": "string"
+        },
+        "License": {
+            "type": "string"
+        },
+        "Version": {
+            "$ref": "version.schema.ref.json"
+        },
+        "Category": {
+            "type": "string"
+        },
+        "VendorId": {
+            "type": "string",
+            "pattern": "^[a-z]+$"
+        },
+        "Copyright": {
+            "type": "string"
+        },
+        "Languages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "Description": {
+            "type": [
+                "array",
+                "string"
+            ],
+            "items": {
+                "type": "string"
+            }
+        },
+        "LongDescription": {
+            "type": [
+                "array",
+                "string"
+            ],
+            "items": {
+                "type": "string"
+            }
+        },
+        "Dependencies": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Id": {
+                        "type": "string"
+                    },
+                    "Type": {
+                        "type": "string",
+                        "enum": [
+                            "Required",
+                            "Optional",
+                            "Testing"
+                        ]
+                    },
+                    "Version": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "Id",
+                    "Version"
+                ]
+            }
+        },
+        "Experimental": {
+            "type": "boolean"
+        },
+        "CompatVersion": {
+            "type": "string"
+        },
+        "DisabledByDefault": {
+            "type": "boolean"
+        },
+        "SoftLoadable": {
+            "type": "boolean"
+        },
+        "DocumentationUrl": {
+            "type": "string"
+        },
+        "TermsAndConditions": {
+            "type": "object",
+            "properties": {
+                "Version": {
+                    "description": "The version of the terms and conditions. If it changes with a plugins version, the user has to accept the new version.",
+                    "$ref": "version.schema.ref.json"
+                },
+                "Text": {
+                    "description": "The text of the terms and conditions, in markdown format.",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "required": [
+        "Id",
+        "Url",
+        "Name",
+        "Vendor",
+        "License",
+        "Version",
+        "VendorId",
+        "Copyright",
+        "Description",
+        "Dependencies",
+        "CompatVersion"
+    ]
+}

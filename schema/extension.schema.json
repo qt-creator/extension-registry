@@ -1,0 +1,47 @@
+{
+  "$id": "https://qt.io/qt-creator/schemas/extension.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Extension Schema",
+  "description": "Schema for an Extension",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "const": "../../schema/extension.schema.json"
+    },
+    "info": {
+      "$ref": "base.schema.ref.json"
+    },
+    "latest": {
+      "$ref": "version.schema.ref.json"
+    },
+    "versions": {
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+\\.[0-9]+\\.[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "sources": {
+              "type": "array",
+              "items": {
+                "$ref": "source.schema.ref.json"
+              }
+            },
+            "metadata": {
+              "$ref": "plugin-meta-data.schema.ref.json"
+            }
+          },
+          "required": [
+            "sources",
+            "metadata"
+          ]
+        }
+      },
+      "minProperties": 1
+    }
+  },
+  "required": [
+    "latest",
+    "versions"
+  ],
+  "additionalProperties": false
+}

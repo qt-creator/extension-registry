@@ -1,0 +1,18 @@
+{
+  "name": "registry",
+  "version": "1.0.0",
+  "description": "We register stuff",
+  "scripts": {
+    "all": "npm run validate && npm run check-hashes && npm run update-ext-badge",
+    "update-ext-badge": "npx badge Extensions $(find registry -name extension.json -o -name pack.json | wc -l) :brightgreen > badges/extensions.svg",
+    "validate": "node scripts/validate.js",
+    "check-hashes": "node scripts/checkhashes.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "badge-maker": "^4.1.0",
+    "probe-image-size": "^7.2.3"
+  }
+}

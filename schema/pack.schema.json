@@ -1,0 +1,16 @@
+{
+    "$id": "https://qt.io/qt-creator/schemas/pack.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Extension Pack Schema",
+    "description": "Schema for an Extension Pack",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "const": "../../schema/pack.schema.json"
+        },
+        "info": {
+            "$ref": "base.schema.ref.json"
+        }
+    },
+    "additionalProperties": false
+}

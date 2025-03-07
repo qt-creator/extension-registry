@@ -1,0 +1,25 @@
+# A github workflow that validates all json files against their schema
+name: Validate
+on: push
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Validate json files
+      run: npm run validate
+
+    # This will fail the workflow if there are any uncommitted changes after the npm run all before.
+    # expected.
+    - name: Compare Directories
+      id: diff
+      run: |
+        if [ "$(git diff --ignore-space-at-eol --text dist/ | wc -l)" -gt "0" ]; then
+          echo "Detected uncommitted changes after build. See status below:"
+          git diff --ignore-space-at-eol --text dist/
+          exit 1
+        fi

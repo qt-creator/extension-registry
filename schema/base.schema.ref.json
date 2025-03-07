@@ -1,0 +1,61 @@
+{
+    "$id": "https://qt.io/qt-creator/schemas/base.schema.ref.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Basics schema",
+    "description": "The basic schema of a pack or extension",
+    "type": "object",
+    "properties": {
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1
+        },
+        "icon": {
+            "type": "string"
+        },
+        "small_icon": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string",
+            "pattern": "^[a-z]+$",
+            "examples": [
+                "vale",
+                "lua",
+                "cppeditor"
+            ],
+            "title": "Extension ID, must be all lowercase letters."
+        },
+        "vendor_id": {
+            "type": "string",
+            "pattern": "^[a-z]+$",
+            "examples": [
+                "theqtcompany",
+                "kde",
+                "kdab"
+            ]
+        },
+        "display_name": {
+            "type": "string"
+        },
+        "display_vendor": {
+            "type": "string"
+        },
+        "license": {
+            "type": "string",
+            "enum": [
+                "open-source",
+                "commercial"
+            ]
+        }
+    },
+    "required": [
+        "id",
+        "vendor_id",
+        "display_name",
+        "display_vendor",
+        "license"
+    ]
+}

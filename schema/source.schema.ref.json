@@ -1,0 +1,45 @@
+{
+    "$id": "https://qt.io/qt-creator/schemas/source.schema.ref.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Plugin source schema",
+    "description": "Schema for a plugins source link",
+    "type": "object",
+    "properties": {
+        "url": {
+            "type": "string"
+        },
+        "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+        },
+        "platform": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "enum": [
+                        "Windows",
+                        "Linux",
+                        "macOS"
+                    ]
+                },
+                "architecture": {
+                    "type": "string",
+                    "enum": [
+                        "x86_64",
+                        "x86",
+                        "arm64"
+                    ]
+                }
+            },
+            "required": [
+                "name",
+                "architecture"
+            ]
+        }
+    },
+    "required": [
+        "url",
+        "sha256"
+    ]
+}
