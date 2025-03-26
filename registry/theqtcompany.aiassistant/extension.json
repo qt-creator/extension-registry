@@ -5,7 +5,7 @@
         "vendor_id": "theqtcompany",
         "display_name": "AI Assistant",
         "display_vendor": "The Qt Company",
-        "license": "open-source"
+        "license": "commercial"
     },
     "latest": "0.8.9",
     "versions": {
