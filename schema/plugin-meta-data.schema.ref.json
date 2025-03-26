@@ -113,15 +113,25 @@
         "TermsAndConditions": {
             "type": "object",
             "properties": {
-                "Version": {
+                "version": {
                     "description": "The version of the terms and conditions. If it changes with a plugins version, the user has to accept the new version.",
-                    "$ref": "version.schema.ref.json"
+                    "type": "number"
                 },
-                "Text": {
+                "text": {
                     "description": "The text of the terms and conditions, in markdown format.",
-                    "type": "string"
+                    "type": [
+                        "array",
+                        "string"
+                    ],
+                    "items": {
+                        "type": "string"
+                    }
                 }
-            }
+            },
+            "required": [
+                "version",
+                "text"
+            ]
         }
     },
     "required": [
