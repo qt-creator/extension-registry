@@ -99,8 +99,8 @@ async function checkIcons(directory) {
 async function checkJsons(directory) {
     try {
         const extensionData = JSON.parse(await fsp.readFile(path.join(directory, "extension.json")))
-        validateExtensionData(extensionData)
         validate(validateExtension, extensionData, path.join(directory, "extension.json"))
+        validateExtensionData(extensionData)
     } catch (e) {
         if (e.code !== "ENOENT") {
             throw e
