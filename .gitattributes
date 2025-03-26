@@ -1,0 +1,15 @@
+# git-archive: ignore .gitignore, .gitattributes, .github/ etc.
+.git* export-ignore
+
+# git-archive: ignore .vscode
+.vscode/ export-ignore
+
+# git-archive: ignore node_modules, badges, schema and scripts
+node_modules/ export-ignore
+badges/ export-ignore
+schema/ export-ignore
+scripts/ export-ignore
+
+# git-archive: ignore package-lock.json, package.json
+package-lock.json export-ignore
+package.json export-ignore
