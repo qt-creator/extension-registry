@@ -99,6 +99,11 @@ async function checkIcons(directory) {
 async function checkJsons(directory) {
     try {
         const extensionData = JSON.parse(await fsp.readFile(path.join(directory, "extension.json")))
+        const fullId = `${extensionData.info.vendor_id}.${extensionData.info.id}`
+        if (fullId !== path.basename(directory)) {
+            console.error(`The extension id (${styleText("green", fullId)}) does not match the directory name (${styleText("red", path.basename(directory))})`)
+            process.exit(1)
+        }
         validate(validateExtension, extensionData, path.join(directory, "extension.json"))
         validateExtensionData(extensionData)
     } catch (e) {
