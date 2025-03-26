@@ -126,7 +126,6 @@
     },
     "required": [
         "Id",
-        "Url",
         "Name",
         "Vendor",
         "License",
