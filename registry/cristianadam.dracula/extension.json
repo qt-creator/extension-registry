@@ -7,7 +7,7 @@
         "display_vendor": "Cristian Adam",
         "license": "open-source"
     },
-    "latest": "1.0.0",
+    "latest": "15.0.1",
     "versions": {
         "15.0.1": {
             "sources": [
