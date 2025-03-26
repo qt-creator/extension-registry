@@ -148,6 +148,11 @@ function validateExtensionData(ext) {
         display_vendor: ext.info.display_vendor,
     }
 
+    if (ext.versions[ext.latest] === undefined) {
+        console.error(`Latest version ${styleText("red", ext.latest)} does not exist in versions`)
+        process.exit(1)
+    }
+
     for (version in ext.versions) {
         const v = ext.versions[version]
         const metaData = v.metadata
