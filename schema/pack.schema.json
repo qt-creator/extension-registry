@@ -10,6 +10,18 @@
         },
         "info": {
             "$ref": "base.schema.ref.json"
+        },
+        "extensions": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^[a-z]+\\.[a-z0-9]+$",
+                "description": "Extension ID, must be all lowercase letters and consist of vendor_id.extension_id",
+                "examples": [
+                    "theqtcompany.vale",
+                    "theqtcompany.cppeditor"
+                ]
+            }
         }
     },
     "additionalProperties": false

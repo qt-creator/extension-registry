@@ -11,5 +11,8 @@
             "language",
             "basics"
         ]
-    }
+    },
+    "extensions": [
+        "theqtcompany.vale"
+    ]
 }
