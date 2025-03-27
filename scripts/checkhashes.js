@@ -19,6 +19,10 @@ function httpGet(url, resolve, reject) {
             httpGet(response.headers.location, resolve, reject);
             return
         }
+        if (response.statusCode !== 200) {
+            reject(new Error(`HTTP ${response.statusCode}`));
+            return
+        }
 
         const hash = crypto.createHash('sha256');
         response.on('error', (err) => {
@@ -42,10 +46,15 @@ async function shaFromUrl(url) {
 
 async function checkSource(source) {
     console.log(`Checking ${styleText('blue', source.url)}`);
-    const actualSha = await shaFromUrl(source.url)
+    try {
+        const actualSha = await shaFromUrl(source.url)
 
-    if (actualSha !== source.sha256) {
-        console.error(`Hash mismatch for ${styleText('red', source.url)}: expected ${styleText('green', source.sha256)} but got ${styleText('red', actualSha)}`);
+        if (actualSha !== source.sha256) {
+            console.error(`Hash mismatch for ${styleText('red', source.url)}: expected ${styleText('green', source.sha256)} but got ${styleText('red', actualSha)}`);
+            return 1;
+        }
+    } catch (e) {
+        console.error(`Failed to check ${styleText('red', source.url)}: ${e.message}`);
         return 1;
     }
 
