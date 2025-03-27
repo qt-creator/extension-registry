@@ -38,7 +38,14 @@ This contains a registry of extensions.
 7. Create a pull request to this repository
 8. Wait for approval
 
-# Distribution
+## Fixing / setting SHA keys
+
+To ease adding new versions of plugins, you can run the script
+`node scripts/fixhashes.js <path/to/your/extension.json>`.
+This will calculate the sha256 hash of the sources and update the
+`sha256` key in the `sources` object.
+
+## Distribution
 
 This repo contains a `.gitattributes` file that excludes folders from
 a call to `git archive`. This is used to create a zip file of the registry
