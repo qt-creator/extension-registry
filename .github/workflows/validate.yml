@@ -1,6 +1,6 @@
 # A github workflow that validates all json files against their schema
 name: Validate
-on: push
+on: [push, pull_request]
 
 jobs:
   validate:
