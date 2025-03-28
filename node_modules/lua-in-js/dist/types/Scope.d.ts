@@ -1,0 +1,14 @@
+import { LuaType } from './utils';
+export declare class Scope {
+    private parent;
+    private _varargs;
+    private readonly _variables;
+    constructor(variables?: {});
+    get(key: string): LuaType;
+    set(key: string, value: LuaType): void;
+    setLocal(key: string, value: LuaType): void;
+    setVarargs(args: LuaType[]): void;
+    getVarargs(): LuaType[];
+    extend(): Scope;
+}
+//# sourceMappingURL=Scope.d.ts.map

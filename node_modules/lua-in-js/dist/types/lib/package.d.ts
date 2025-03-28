@@ -1,0 +1,8 @@
+import { Table } from '../Table';
+import { LuaType, Config } from '../utils';
+declare const getLibPackage: (execModule: (content: string, moduleName: string) => LuaType, cfg: Config) => {
+    libPackage: Table;
+    _require: (modname: LuaType) => LuaType;
+};
+export { getLibPackage };
+//# sourceMappingURL=package.d.ts.map

@@ -2,6 +2,7 @@
   "name": "registry",
   "version": "1.0.0",
   "description": "We register stuff",
+  "type": "module",
   "scripts": {
     "all": "npm run validate && npm run check-hashes && npm run update-ext-badge",
     "update-ext-badge": "npx badge Extensions $(find registry -name extension.json -o -name pack.json | wc -l) :brightgreen > badges/extensions.svg",
@@ -13,6 +14,8 @@
   "devDependencies": {
     "ajv": "^8.17.1",
     "badge-maker": "^4.1.0",
-    "probe-image-size": "^7.2.3"
+    "probe-image-size": "^7.2.3",
+    "lua-in-js": "^2.2.5",
+    "luaparse": "github:Maddimax/luaparse"
   }
 }

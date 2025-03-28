@@ -1,11 +1,12 @@
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+import { promisify } from 'util';
+import { exec } from 'child_process'
+const execAsync = promisify(exec);
 
-const path = require('path');
-const fs = require('fs/promises');
-const https = require('https');
-const crypto = require('crypto');
-const styleTextOrg = require('node:util').styleText
+import { basename } from 'path';
+import { readFile } from 'fs/promises';
+import { get } from 'https';
+import { createHash } from 'crypto';
+import { styleText as styleTextOrg } from 'node:util';
 
 function styleText(color, text) {
     // Github actions don't have a real tty, so styleText will normally output monochrome text.
@@ -14,7 +15,7 @@ function styleText(color, text) {
 }
 
 function httpGet(url, resolve, reject) {
-    https.get(url, (response) => {
+    get(url, (response) => {
         if (response.statusCode === 301 || response.statusCode === 302) {
             httpGet(response.headers.location, resolve, reject);
             return
@@ -24,7 +25,7 @@ function httpGet(url, resolve, reject) {
             return
         }
 
-        const hash = crypto.createHash('sha256');
+        const hash = createHash('sha256');
         response.on('error', (err) => {
             reject(err);
         })
@@ -66,7 +67,7 @@ async function main(argv) {
     const to = argv[3] || 'HEAD';
 
     console.log(`Checking for changes from ${styleText('blue', from)} to ${styleText('blue', to)}`);
-    const { stdout, stderr } = await exec(`git diff --name-only ${from}...${to}`);
+    const { stdout, stderr } = await execAsync(`git diff --name-only ${from}...${to}`);
     if (stderr) {
         console.error(stderr);
         return 1;
@@ -74,13 +75,13 @@ async function main(argv) {
 
     const filesToCheck = stdout
         .split('\n')
-        .filter(file => file.includes('registry') && path.basename(file) === 'extension.json')
+        .filter(file => file.includes('registry') && basename(file) === 'extension.json')
 
     const failedHashes
         = (await Promise.all(
             (await Promise.all(
                 filesToCheck
-                    .map(async file => JSON.parse(await fs.readFile(file)))
+                    .map(async file => JSON.parse(await readFile(file)))
                     .map(async content => Object.values((await content).versions))))
                 .flat()
                 .map(version => version.sources)

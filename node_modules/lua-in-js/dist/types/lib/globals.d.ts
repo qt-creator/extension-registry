@@ -1,0 +1,5 @@
+import { Table } from '../Table';
+import { LuaType, Config, tostring } from '../utils';
+declare function createG(cfg: Config, execChunk: (_G: Table, chunk: string) => LuaType[]): Table;
+export { tostring, createG };
+//# sourceMappingURL=globals.d.ts.map
