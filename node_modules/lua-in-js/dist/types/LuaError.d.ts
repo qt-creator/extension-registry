@@ -1,0 +1,5 @@
+export declare class LuaError extends Error {
+    constructor(message: string);
+    toString(): string;
+}
+//# sourceMappingURL=LuaError.d.ts.map

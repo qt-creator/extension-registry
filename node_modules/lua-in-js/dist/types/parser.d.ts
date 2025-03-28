@@ -1,0 +1,3 @@
+declare const parse: (data: string) => string;
+export { parse };
+//# sourceMappingURL=parser.d.ts.map

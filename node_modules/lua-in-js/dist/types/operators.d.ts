@@ -1,0 +1,31 @@
+import { LuaType } from './utils';
+declare const operators: {
+    bool: (value: LuaType) => boolean;
+    and: (l: LuaType, r: LuaType) => LuaType;
+    or: (l: LuaType, r: LuaType) => LuaType;
+    not: (value: LuaType) => boolean;
+    unm: (value: LuaType) => number;
+    bnot: (value: LuaType) => number;
+    len: (value: LuaType) => number;
+    add: (left: LuaType, right: LuaType) => number;
+    sub: (left: LuaType, right: LuaType) => number;
+    mul: (left: LuaType, right: LuaType) => number;
+    mod: (left: LuaType, right: LuaType) => number;
+    pow: (left: LuaType, right: LuaType) => number;
+    div: (left: LuaType, right: LuaType) => number;
+    idiv: (left: LuaType, right: LuaType) => number;
+    band: (left: LuaType, right: LuaType) => number;
+    bor: (left: LuaType, right: LuaType) => number;
+    bxor: (left: LuaType, right: LuaType) => number;
+    shl: (left: LuaType, right: LuaType) => number;
+    shr: (left: LuaType, right: LuaType) => number;
+    concat: (left: LuaType, right: LuaType) => string;
+    neq: (left: LuaType, right: LuaType) => boolean;
+    eq: (left: LuaType, right: LuaType) => boolean;
+    lt: (left: LuaType, right: LuaType) => boolean;
+    le: (left: LuaType, right: LuaType) => boolean;
+    gt: (left: LuaType, right: LuaType) => boolean;
+    ge: (left: LuaType, right: LuaType) => boolean;
+};
+export { operators };
+//# sourceMappingURL=operators.d.ts.map

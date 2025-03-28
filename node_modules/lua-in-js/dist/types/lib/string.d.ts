@@ -1,0 +1,5 @@
+import { Table } from '../Table';
+declare const libString: Table;
+declare const metatable: Table;
+export { libString, metatable };
+//# sourceMappingURL=string.d.ts.map

@@ -1,9 +1,22 @@
-const Ajv = require("ajv/")
-const path = require("path")
-const fs = require("fs")
-const fsp = require("fs/promises")
-const styleTextOrg = require('node:util').styleText
-const probe = require('probe-image-size');
+import Ajv from "ajv"
+import { join, relative, basename, dirname } from "path"
+import { createReadStream } from "fs"
+import { readdir, stat, readFile } from "fs/promises"
+import { styleText as styleTextOrg } from 'node:util'
+import probe from 'probe-image-size'
+import { fileURLToPath } from 'url';
+
+import extensionSchema from "../schema/extension.schema.json" with {type: "json" }
+import packSchema from "../schema/pack.schema.json" with {type: "json" }
+
+import baseSchema from "../schema/base.schema.ref.json" with {type: "json" }
+import sourceSchema from "../schema/source.schema.ref.json" with {type: "json" }
+import versionSchema from "../schema/version.schema.ref.json" with {type: "json" }
+import pluginMetaDataSchema from "../schema/plugin-meta-data.schema.ref.json" with {type: "json" }
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 function styleText(color, text) {
     // Github actions don't have a real tty, so styleText will normally output monochrome text.
@@ -11,15 +24,7 @@ function styleText(color, text) {
     return styleTextOrg(color, text, { validateStream: process.env.CI !== "true" })
 }
 
-const rootFolder = path.join(__dirname, "..")
-
-const extensionSchema = require(path.join(rootFolder, "schema", "extension.schema.json"))
-const packSchema = require(path.join(rootFolder, "schema", "pack.schema.json"))
-
-const baseSchema = require(path.join(rootFolder, "schema", "base.schema.ref.json"))
-const sourceSchema = require(path.join(rootFolder, "schema", "source.schema.ref.json"))
-const versionSchema = require(path.join(rootFolder, "schema", "version.schema.ref.json"))
-const pluginMetaDataSchema = require(path.join(rootFolder, "schema", "plugin-meta-data.schema.ref.json"))
+const rootFolder = join(__dirname, "..")
 
 const ajv = new Ajv({ allowUnionTypes: true })
 ajv.addSchema(baseSchema)
@@ -30,21 +35,21 @@ ajv.addSchema(pluginMetaDataSchema)
 const validateExtension = ajv.compile(extensionSchema)
 const validatePack = ajv.compile(packSchema)
 
-const registryFolder = path.join(rootFolder, "registry")
+const registryFolder = join(rootFolder, "registry")
 
 async function checkDirectoryContents(directory) {
-    console.log(`Checking ${styleText('green', path.relative(rootFolder, directory))}`)
+    console.log(`Checking ${styleText('green', relative(rootFolder, directory))}`)
     const allowedFiles = ["extension.json", "pack.json", "icon.png", "icon@2x.png"]
 
-    const files = await fsp.readdir(directory)
+    const files = await readdir(directory)
     if (!files.includes("extension.json") && !files.includes("pack.json")) {
-        console.error(`No extension or pack found in ${styleText('red', path.relative(rootFolder, directory))}`)
+        console.error(`No extension or pack found in ${styleText('red', relative(rootFolder, directory))}`)
         process.exit(1)
     }
 
     for (const file of files) {
         if (!allowedFiles.includes(file)) {
-            console.error(`Unexpected file found in ${styleText('green', path.relative(rootFolder, directory))}: ${styleText('red', file)}`)
+            console.error(`Unexpected file found in ${styleText('green', relative(rootFolder, directory))}: ${styleText('red', file)}`)
             console.log('Allowed files:', allowedFiles)
             process.exit(1)
         }
@@ -52,22 +57,22 @@ async function checkDirectoryContents(directory) {
 }
 
 async function checkFileSize(file, maxSize) {
-    const fileSize = (await fsp.stat(file)).size
+    const fileSize = (await stat(file)).size
     if (fileSize > maxSize) {
-        console.error(`File ${styleText("green", path.relative(rootFolder, file))} is too large: ${styleText("red", `${fileSize} bytes`)}`)
+        console.error(`File ${styleText("green", relative(rootFolder, file))} is too large: ${styleText("red", `${fileSize} bytes`)}`)
         process.exit(1)
     }
 }
 
 async function checkImageSize(image, expectedSize) {
-    const iconInfo = await probe(fs.createReadStream(image));
+    const iconInfo = await probe(createReadStream(image));
     if (iconInfo.mime !== 'image/png' || iconInfo.type !== 'png') {
-        console.error(`Icon ${styleText("green", path.relative(rootFolder, icon))} is not a PNG file`)
+        console.error(`Icon ${styleText("green", relative(rootFolder, icon))} is not a PNG file`)
         process.exit(1)
     }
 
     if (iconInfo.width !== expectedSize || iconInfo.height !== expectedSize) {
-        console.error(`Icon ${styleText("green", path.relative(rootFolder, image))} has the wrong size: ${styleText("red", `${iconInfo.width}x${iconInfo.height}`)}`)
+        console.error(`Icon ${styleText("green", relative(rootFolder, image))} has the wrong size: ${styleText("red", `${iconInfo.width}x${iconInfo.height}`)}`)
         process.exit(1)
     }
 }
@@ -80,31 +85,31 @@ async function checkIcon(icon, expectedSize) {
 }
 
 async function checkIcons(directory) {
-    const files = await fsp.readdir(directory)
+    const files = await readdir(directory)
     const icons = files.filter((file) => file === "icon.png" || file === "icon@2x.png")
     if (icons.length === 0) {
         return
     }
     if (icons.length === 1) {
-        console.error(`Only one icon found in ${styleText("green", path.relative(rootFolder, directory))}`)
+        console.error(`Only one icon found in ${styleText("green", relative(rootFolder, directory))}`)
         process.exit(1)
     }
 
     await Promise.all([
-        checkIcon(path.join(directory, "icon.png"), 16),
-        checkIcon(path.join(directory, "icon@2x.png"), 32)
+        checkIcon(join(directory, "icon.png"), 16),
+        checkIcon(join(directory, "icon@2x.png"), 32)
     ])
 }
 
 async function checkJsons(directory) {
     try {
-        const extensionData = JSON.parse(await fsp.readFile(path.join(directory, "extension.json")))
+        const extensionData = JSON.parse(await readFile(join(directory, "extension.json")))
         const fullId = `${extensionData.info.vendor_id}.${extensionData.info.id}`
-        if (fullId !== path.basename(directory)) {
-            console.error(`The extension id (${styleText("green", fullId)}) does not match the directory name (${styleText("red", path.basename(directory))})`)
+        if (fullId !== basename(directory)) {
+            console.error(`The extension id (${styleText("green", fullId)}) does not match the directory name (${styleText("red", basename(directory))})`)
             process.exit(1)
         }
-        validate(validateExtension, extensionData, path.join(directory, "extension.json"))
+        validate(validateExtension, extensionData, join(directory, "extension.json"))
         validateExtensionData(extensionData)
     } catch (e) {
         if (e.code !== "ENOENT") {
@@ -113,8 +118,8 @@ async function checkJsons(directory) {
     }
 
     try {
-        const packData = JSON.parse(await fsp.readFile(path.join(directory, "pack.json")))
-        validate(validatePack, packData, path.join(directory, "pack.json"))
+        const packData = JSON.parse(await readFile(join(directory, "pack.json")))
+        validate(validatePack, packData, join(directory, "pack.json"))
     } catch (e) {
         if (e.code !== "ENOENT") {
             throw e
@@ -123,23 +128,23 @@ async function checkJsons(directory) {
 }
 
 async function checkExtensionDirectoryContents(directory) {
-    const checks = (await fsp.readdir(directory)).map((extension) => {
+    const checks = (await readdir(directory)).map((extension) => {
         return [
-            checkJsons(path.join(directory, extension)),
-            checkDirectoryContents(path.join(directory, extension)),
-            checkIcons(path.join(directory, extension))
+            checkJsons(join(directory, extension)),
+            checkDirectoryContents(join(directory, extension)),
+            checkIcons(join(directory, extension))
         ]
     }).flat()
 
     await Promise.all(checks)
 
-    console.log(`All extensions in ${styleText("green", path.relative(rootFolder, directory))} are ${styleText('green', 'OK')}`)
+    console.log(`All extensions in ${styleText("green", relative(rootFolder, directory))} are ${styleText('green', 'OK')}`)
 }
 
 function validate(validator, extensionData, p) {
     const res = validator(extensionData)
     if (!res) {
-        console.error(`Schema ${styleText("red", path.relative(registryFolder, p))}:`, styleText("red", "failed"))
+        console.error(`Schema ${styleText("red", relative(registryFolder, p))}:`, styleText("red", "failed"))
         console.error(validator.errors)
         process.exit(1)
     }
@@ -158,7 +163,7 @@ function validateExtensionData(ext) {
         process.exit(1)
     }
 
-    for (version in ext.versions) {
+    for (const version in ext.versions) {
         const v = ext.versions[version]
         const metaData = v.metadata
 

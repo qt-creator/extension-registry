@@ -1,10 +1,10 @@
-const fs = require('fs/promises');
-const https = require('https');
-const crypto = require('crypto');
-const styleText = require('node:util').styleText
+import { readFile, writeFile } from 'fs/promises';
+import { get } from 'https';
+import { createHash } from 'crypto';
+import { styleText } from 'node:util';
 
 function httpGet(url, resolve, reject) {
-    https.get(url, (response) => {
+    get(url, (response) => {
         if (response.statusCode === 301 || response.statusCode === 302) {
             httpGet(response.headers.location, resolve, reject);
             return
@@ -13,7 +13,7 @@ function httpGet(url, resolve, reject) {
             return
         }
 
-        const hash = crypto.createHash('sha256');
+        const hash = createHash('sha256');
         response.on('error', (err) => {
             reject(err);
         })
@@ -59,14 +59,14 @@ async function main(argv) {
         return 1;
     }
 
-    let extensionJson = JSON.parse(await fs.readFile(extensionJsonPath, 'utf-8'));
+    let extensionJson = JSON.parse(await readFile(extensionJsonPath, 'utf-8'));
 
     for (let version in extensionJson.versions) {
         const v = extensionJson.versions[version];
         await Promise.all(await v.sources.map(checkSource));
     }
 
-    await fs.writeFile(extensionJsonPath, JSON.stringify(extensionJson, null, 4));
+    await writeFile(extensionJsonPath, JSON.stringify(extensionJson, null, 4));
 }
 
 

@@ -1,0 +1,4 @@
+import { Table } from '../Table';
+declare const libTable: Table;
+export { libTable };
+//# sourceMappingURL=table.d.ts.map
