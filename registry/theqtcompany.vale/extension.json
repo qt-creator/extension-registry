@@ -18,7 +18,7 @@
         "1.0.3": {
             "sources": [
                 {
-                    "url": "https://github.com/qt-creator/ValeLS/releases/download/v1.0.3/ValeLS.zip",
+                    "url": "https://github.com/qt-creator/plugin-vale-languageserver/releases/download/v1.0.3/ValeLS.zip",
                     "sha256": "ec04206932386bf9a8a319b8a7d664acbb47c58db8487a686a48014b5e14810a"
                 }
             ],
@@ -58,7 +58,7 @@
         "0.7.0": {
             "sources": [
                 {
-                    "url": "https://github.com/qt-creator/ValeLS/releases/download/v0.7/ValeLS.zip",
+                    "url": "https://github.com/qt-creator/plugin-vale-languageserver/releases/download/v0.7/ValeLS.zip",
                     "sha256": "baf38eeccfd5f8e9acfb7c9817c74eb66e53b440170bb901f485d8bc09610c4b"
                 }
             ],
@@ -98,7 +98,7 @@
         "0.5.0": {
             "sources": [
                 {
-                    "url": "https://github.com/qt-creator/ValeLS/releases/download/v0.5/ValeLS.zip",
+                    "url": "https://github.com/qt-creator/plugin-vale-languageserver/releases/download/v0.5/ValeLS.zip",
                     "sha256": "1f84eede6bd6bebec805b2f35c4f8c7f18c8dbabac88122889ac83feee47d984"
                 }
             ],
@@ -138,7 +138,7 @@
         "0.4.0": {
             "sources": [
                 {
-                    "url": "https://github.com/qt-creator/ValeLS/releases/download/v0.4/ValeLS.zip",
+                    "url": "https://github.com/qt-creator/plugin-vale-languageserver/releases/download/v0.4/ValeLS.zip",
                     "sha256": "f0a7e3bacf15fc352539e7c687aeea96180f3c72ffe1cb4b174f94f2c857428a"
                 }
             ],
