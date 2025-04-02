@@ -1,7 +1,10 @@
 # The Registry
 
 [![Number of Extensions](./badges/extensions.svg)](./badges/extensions.svg)
-[![Status of CI validation](https://github.com/qt-creator/extension-registry/actions/workflows/validate.yml/badge.svg)](https://github.com/Maddimax/registry/actions/workflows/validate.yml)
+[![Status of CI validation](https://github.com/qt-creator/extension-registry/actions/workflows/validate.yml/badge.svg)](https://github.com/qt-creator/extension-registry/actions/workflows/validate.yml)
+[![Status of CI Hash validation](https://github.com/qt-creator/extension-registry/actions/workflows/check-hash.yml/badge.svg)](https://github.com/qt-creator/extension-registry/actions/workflows/check-hash.yml)
+
+
 
 This contains a registry of extensions.
 
