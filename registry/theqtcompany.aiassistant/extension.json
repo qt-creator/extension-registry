@@ -282,52 +282,52 @@
         "0.9.3": {
             "sources": [
                 {
-                    "url": "https://qtccache.qt.io/QtAIAssistant/Asset?assetId=264675897",
+                    "url": "https://qtccache.qt.io/QtAIAssistant/Asset?assetId=264815213",
                     "platform": {
                         "name": "Windows",
                         "architecture": "x86_64"
                     },
-                    "sha256": "1b01687341f8115baa26db623f6c211c872dcd9b0904536cea416f4a5d2d0194"
+                    "sha256": "dd5f64813c5a56ef2a8795490b59bf20123178a5c9abcf8e3ceca5bb678aece5"
                 },
                 {
-                    "url": "https://qtccache.qt.io/QtAIAssistant/Asset?assetId=264675895",
+                    "url": "https://qtccache.qt.io/QtAIAssistant/Asset?assetId=264815210",
                     "platform": {
                         "name": "Windows",
                         "architecture": "arm64"
                     },
-                    "sha256": "1c54cc6ef54d79af7f383a9aaaaf9a57a60853c1d0bc25a949313786a3444935"
+                    "sha256": "6ce555d2857c3cc7590ec7bfd44dda628b0c6e95de02b92697e556f5c3603e84"
                 },
                 {
-                    "url": "https://qtccache.qt.io/QtAIAssistant/Asset?assetId=264675894",
+                    "url": "https://qtccache.qt.io/QtAIAssistant/Asset?assetId=264815211",
                     "platform": {
                         "name": "Linux",
                         "architecture": "x86_64"
                     },
-                    "sha256": "baae085f80624409c995a5716bca2e3f4ac7328a7c17487907e010245f22f663"
+                    "sha256": "7ae21f59d014aaec59a16ca3fcf68f1e37f129dd1f50fcc7ae80a787db19ffc3"
                 },
                 {
-                    "url": "https://qtccache.qt.io/QtAIAssistant/Asset?assetId=264675893",
+                    "url": "https://qtccache.qt.io/QtAIAssistant/Asset?assetId=264815209",
                     "platform": {
                         "name": "Linux",
                         "architecture": "arm64"
                     },
-                    "sha256": "4e9fd39fbfb0c45dff2fe2b61bec063b74442c97ea2421859425a3c1c906b038"
+                    "sha256": "309e0fffa8605e3843e2b9b69b6ef23a3d212b783ed485f158b30e7fe63daeb9"
                 },
                 {
-                    "url": "https://qtccache.qt.io/QtAIAssistant/Asset?assetId=264675896",
+                    "url": "https://qtccache.qt.io/QtAIAssistant/Asset?assetId=264815212",
                     "platform": {
                         "name": "macOS",
                         "architecture": "x86_64"
                     },
-                    "sha256": "1f1b3d5a5341fa70eb151b8de34f777226a01cbd6bf7094e42b2d17c12fc740c"
+                    "sha256": "ff70ecebd09d940dd297e52f5bf9cbb7c84549c9e34276de18b45e484c55bc17"
                 },
                 {
-                    "url": "https://qtccache.qt.io/QtAIAssistant/Asset?assetId=264675896",
+                    "url": "https://qtccache.qt.io/QtAIAssistant/Asset?assetId=264815212",
                     "platform": {
                         "name": "macOS",
                         "architecture": "arm64"
                     },
-                    "sha256": "1f1b3d5a5341fa70eb151b8de34f777226a01cbd6bf7094e42b2d17c12fc740c"
+                    "sha256": "ff70ecebd09d940dd297e52f5bf9cbb7c84549c9e34276de18b45e484c55bc17"
                 }
             ],
             "metadata": {
