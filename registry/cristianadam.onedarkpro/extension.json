@@ -1,0 +1,116 @@
+{
+    "$schema": "../../schema/extension.schema.json",
+    "info": {
+        "id": "onedarkpro",
+        "vendor_id": "cristianadam",
+        "display_name": "OneDark Pro",
+        "display_vendor": "Cristian Adam",
+        "license": "open-source"
+    },
+    "latest": "17.0.0",
+    "versions": {
+        "17.0.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-onedark-pro/releases/download/v17.0.0/OneDarkPro-17.0.0-Windows-x64.7z",
+                    "sha256": "0b1bd79c112b8f5e0f22fdef983e81ff8cd9546ca2815f9bbe6be55197c1f95b",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-onedark-pro/releases/download/v17.0.0/OneDarkPro-17.0.0-Windows-arm64.7z",
+                    "sha256": "6f6b5b024383edd7337c10f91379fa2c21de542674ec93665449129ecc8f87d0",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-onedark-pro/releases/download/v17.0.0/OneDarkPro-17.0.0-Linux-x64.7z",
+                    "sha256": "792acbc3031234256f73e455d0596fa10f27c5ecc081539653383dd24b898fc4",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-onedark-pro/releases/download/v17.0.0/OneDarkPro-17.0.0-Linux-arm64.7z",
+                    "sha256": "e8e02f4f53cfd0d6e0025df0effcc33ffb833475c46ec45eb3aee2a035501888",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-onedark-pro/releases/download/v17.0.0/OneDarkPro-17.0.0-macOS-universal.7z",
+                    "sha256": "84f8a1fa266116bc9b0f2883944764b1ed11e65b8e78dfd775285b5bf8ccc738",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-onedark-pro/releases/download/v17.0.0/OneDarkPro-17.0.0-macOS-universal.7z",
+                    "sha256": "84f8a1fa266116bc9b0f2883944764b1ed11e65b8e78dfd775285b5bf8ccc738",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "onedarkpro",
+                "Name": "OneDark Pro",
+                "Version": "17.0.0",
+                "CompatVersion": "17.0.0",
+                "Vendor": "Cristian Adam",
+                "VendorId": "cristianadam",
+                "Copyright": "(C) 2013-2022 Binaryify, Cristian Adam, Copyright (C) The Qt Company Ltd. and other contributors.",
+                "License": "MIT",
+                "SoftLoadable": true,
+                "Description": "Atom's iconic One Dark theme.",
+                "LongDescription": [
+                    "Atom's iconic One Dark theme, and one of the most installed [themes](https://marketplace.visualstudio.com/search?target=VSCode&category=Themes&sortBy=Installs) for VS Code!",
+                    "",
+                    "![Screenshot](https://raw.githubusercontent.com/cristianadam/qt-creator-onedark-pro/refs/heads/main/screenshot.png)",
+                    "",
+                    "# License",
+                    "",
+                    "```",
+                    "The MIT License (MIT)",
+                    "",
+                    "Copyright (c) 2013-2022 Binaryify",
+                    "",
+                    "Permission is hereby granted, free of charge, to any person obtaining a copy",
+                    "of this software and associated documentation files (the \"Software\"), to deal",
+                    "in the Software without restriction, including without limitation the rights",
+                    "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+                    "copies of the Software, and to permit persons to whom the Software is",
+                    "furnished to do so, subject to the following conditions:",
+                    "",
+                    "The above copyright notice and this permission notice shall be included in",
+                    "all copies or substantial portions of the Software.",
+                    "",
+                    "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",
+                    "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",
+                    "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE",
+                    "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",
+                    "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",
+                    "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN",
+                    "THE SOFTWARE.",
+                    "```"
+                ],
+                "Url": "https://github.com/cristianadam/qt-creator-onedark-pro",
+                "DocumentationUrl": "",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "17.0.0"
+                    }
+                ]
+            }
+        }
+    }
+}
