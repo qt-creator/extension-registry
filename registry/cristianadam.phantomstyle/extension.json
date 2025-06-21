@@ -7,53 +7,53 @@
         "display_vendor": "Cristian Adam",
         "license": "open-source"
     },
-    "latest": "16.0.82",
+    "latest": "17.0.0",
     "versions": {
-        "16.0.82": {
+        "17.0.0": {
             "sources": [
                 {
-                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v17.0.0-beta1/PhantomStylePlugin-17.0.0-beta1-Windows-x64.7z",
-                    "sha256": "e17ee8cdca115a25f85b9f5640cf024dc8446d9d31804bdde75f0083ef37f0fb",
+                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v17.0.0/PhantomStylePlugin-17.0.0-Windows-x64.7z",
+                    "sha256": "5e3bea6d880897bc6455950fd3b301210916e66489d94ee1a9af3d704e165843",
                     "platform": {
                         "name": "Windows",
                         "architecture": "x86_64"
                     }
                 },
                 {
-                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v17.0.0-beta1/PhantomStylePlugin-17.0.0-beta1-Windows-arm64.7z",
-                    "sha256": "22294950ded4b87ca9f6a6cfbd1f734fc77e786e990c3ab154318f3dceaec32f",
+                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v17.0.0/PhantomStylePlugin-17.0.0-Windows-arm64.7z",
+                    "sha256": "e0ef38d3021adb3f3e2ab5f10731aa454ea4410cccf8b03d211780836c60a599",
                     "platform": {
                         "name": "Windows",
                         "architecture": "arm64"
                     }
                 },
                 {
-                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v17.0.0-beta1/PhantomStylePlugin-17.0.0-beta1-Linux-x64.7z",
-                    "sha256": "af78cc8bb8d4e5bd21a644f6f3675359278e49234ae7a97c917636f67e33e005",
+                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v17.0.0/PhantomStylePlugin-17.0.0-Linux-x64.7z",
+                    "sha256": "3d434129eb465cf53d9b30ce5426d3d4419f4a5426faed217dd29999564306e4",
                     "platform": {
                         "name": "Linux",
                         "architecture": "x86_64"
                     }
                 },
                 {
-                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v17.0.0-beta1/PhantomStylePlugin-17.0.0-beta1-Linux-arm64.7z",
-                    "sha256": "f76de0d1ad4cebb2b77b9eb0a9f60c525dae66d183826307a2b3db3848c091fa",
+                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v17.0.0/PhantomStylePlugin-17.0.0-Linux-arm64.7z",
+                    "sha256": "ba77618fd2c56aa76076a061d63d0873c780601a676e56f3cd77f2c85ecc2d6c",
                     "platform": {
                         "name": "Linux",
                         "architecture": "arm64"
                     }
                 },
                 {
-                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v17.0.0-beta1/PhantomStylePlugin-17.0.0-beta1-macOS-universal.7z",
-                    "sha256": "13e4f7620273ae4211309cc72bbe00b5f108b29c72f63ade39ac9d82326f28ce",
+                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v17.0.0/PhantomStylePlugin-17.0.0-macOS-universal.7z",
+                    "sha256": "7862a04ced3b4ee5ef8946ebc8e5345592a80225421309efeada5f2010866bd3",
                     "platform": {
                         "name": "macOS",
                         "architecture": "x86_64"
                     }
                 },
                 {
-                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v17.0.0-beta1/PhantomStylePlugin-17.0.0-beta1-macOS-universal.7z",
-                    "sha256": "13e4f7620273ae4211309cc72bbe00b5f108b29c72f63ade39ac9d82326f28ce",
+                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v17.0.0/PhantomStylePlugin-17.0.0-macOS-universal.7z",
+                    "sha256": "7862a04ced3b4ee5ef8946ebc8e5345592a80225421309efeada5f2010866bd3",
                     "platform": {
                         "name": "macOS",
                         "architecture": "arm64"
@@ -66,18 +66,18 @@
                 "Name": "PhantomStyle",
                 "Vendor": "Cristian Adam",
                 "License": "GNU LGPL 2.1",
-                "Version": "16.0.82",
+                "Version": "17.0.0",
                 "VendorId": "cristianadam",
                 "Copyright": "(C) 2019 Andrew Richards, Cristian Adam, Copyright (C) The Qt Company Ltd. and other contributors.",
                 "Description": "PhantomStyle for Qt Creator",
                 "Dependencies": [
                     {
                         "Id": "core",
-                        "Version": "16.0.82"
+                        "Version": "17.0.0"
                     }
                 ],
                 "SoftLoadable": true,
-                "CompatVersion": "16.0.82",
+                "CompatVersion": "17.0.0",
                 "LongDescription": [
                     "# Qt Creator PhantomStyle Plugin",
                     "",
