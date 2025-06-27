@@ -13,7 +13,7 @@
             "sources": [
                 {
                     "url": "https://github.com/cristianadam/qt-creator-minimap/releases/download/v17.0.0/MinimapPlugin-17.0.0-Windows-x64.7z",
-                    "sha256": "931759cfa46ec3009bef91ce8868961f5ad370526e3bb1fbeb56b00347a463d3",
+                    "sha256": "2c0b1535ffb192bbccd9a5bc7f6796482efa046abd79444bf575e67297d95d35",
                     "platform": {
                         "name": "Windows",
                         "architecture": "x86_64"
@@ -21,7 +21,7 @@
                 },
                 {
                     "url": "https://github.com/cristianadam/qt-creator-minimap/releases/download/v17.0.0/MinimapPlugin-17.0.0-Windows-arm64.7z",
-                    "sha256": "4deb853cfd7cc6db8ce2917ab9ecdc706df4adb2e36c15110fdfedc710f91021",
+                    "sha256": "e7b3435874e61a26918caa322f5f3feebf3bf190d30602aaf4bd7261327fe563",
                     "platform": {
                         "name": "Windows",
                         "architecture": "arm64"
@@ -29,7 +29,7 @@
                 },
                 {
                     "url": "https://github.com/cristianadam/qt-creator-minimap/releases/download/v17.0.0/MinimapPlugin-17.0.0-Linux-x64.7z",
-                    "sha256": "b4fc36d6f651117b7428b592ce9d17fc9072cc13bb73404bb21cb01a5d9364b9",
+                    "sha256": "435b8991023a2783e2a96cf1810ad0915a976adbde736fd90fefbe7d7d4531ed",
                     "platform": {
                         "name": "Linux",
                         "architecture": "x86_64"
@@ -37,7 +37,7 @@
                 },
                 {
                     "url": "https://github.com/cristianadam/qt-creator-minimap/releases/download/v17.0.0/MinimapPlugin-17.0.0-Linux-arm64.7z",
-                    "sha256": "7fcc28fa2c1ab7ae1d8bdbe2881e0ce78dcfc1513a335b28967d2023a45eea2a",
+                    "sha256": "bf070516ca81d0f6225edffd78cc2d3a1a4f7e24e81de94e077642adf4aadaa8",
                     "platform": {
                         "name": "Linux",
                         "architecture": "arm64"
@@ -45,7 +45,7 @@
                 },
                 {
                     "url": "https://github.com/cristianadam/qt-creator-minimap/releases/download/v17.0.0/MinimapPlugin-17.0.0-macOS-universal.7z",
-                    "sha256": "fde500123d78240a1cc96cd13b95f8263e0321de833d0005247f1e6d622ca8b2",
+                    "sha256": "2e94df455fb06cda0b9f5e8b8f132cbf884aec650af962b1fd23e08a9a8419e0",
                     "platform": {
                         "name": "macOS",
                         "architecture": "x86_64"
@@ -53,7 +53,7 @@
                 },
                 {
                     "url": "https://github.com/cristianadam/qt-creator-minimap/releases/download/v17.0.0/MinimapPlugin-17.0.0-macOS-universal.7z",
-                    "sha256": "fde500123d78240a1cc96cd13b95f8263e0321de833d0005247f1e6d622ca8b2",
+                    "sha256": "2e94df455fb06cda0b9f5e8b8f132cbf884aec650af962b1fd23e08a9a8419e0",
                     "platform": {
                         "name": "macOS",
                         "architecture": "arm64"
