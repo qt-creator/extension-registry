@@ -11,6 +11,8 @@
 /registry/theqtcompany.vale @Maddimax
 /registry/theqtcompany.cpp @Maddimax
 
+/registry/rosindustrial.rosprojectmanager @christian-rauch @Levi-Armstrong
+
 # The basic stuff is owned by the Qt Creator team
 
 /CODEOWNERS @qt-creator/qt-creator-team
