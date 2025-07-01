@@ -42,7 +42,8 @@ async function parseSpec(pathToSpec) {
 
 async function main(argv) {
     if (argv.length < 4) {
-        console.error('Usage: node scripts/newversion.js <extension.json> <plugins.json/plugin.lua>');
+        console.error('Usage: node scripts/new.js <vendor.company/extension.json> <plugin.json/plugin.lua>');
+        console.error('Example: node scripts/new.js company.myplugin/extension.json ~/builds/myplugin/myplugin.json');
         return 1;
     }
 
