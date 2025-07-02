@@ -12,12 +12,14 @@ This contains a registry of extensions.
 
 1. Fork this repository
 2. Add a new folder in the `registry` folder with the name `<vendorid>.<pluginid>`
-3. Add your extension to the registry using `node scripts/new.js registry/<vendorid>.<pluginid> <path/to/your/extension.json>`. This will create a new folder with the name `<vendorid>.<pluginid>` and create the `extension.json` based on your extension in it. (You can also specify your lua entry script path instead)
-4. Run `npm run all` to validate your changes
-5. Run `git add .` and `git commit -m "Added <your-plugin-id>"`
-6. Push your changes to your fork
-7. Create a pull request to this repository
-8. Wait for approval
+3. Find the metadata `Extension.json` that was generated from your `Extension.json.in` file from within your Extensions build folder. For Lua plugins you can use the main plugin lua file instead.
+4. Add your extension to the registry using `node scripts/new.js registry/<vendorid>.<pluginid>/extension.json <buildfolder/Extension.json>`. This will create a new folder with the name `<vendorid>.<pluginid>` and create the `extension.json` based on your extension in it.
+  (You can also specify your lua entry script path instead)
+5. Fill in the `sources` array in the newly created `extension.json` file with the urls to your Extension.
+6. Run `git add .` and `git commit -m "Added <your-plugin-id>"`
+7. Push your changes to your fork
+8. Create a pull request to this repository
+9. Wait for approval
 
 ## Fixing / setting SHA keys
 
