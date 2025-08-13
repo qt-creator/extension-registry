@@ -6,7 +6,7 @@
 
 
 
-This contains a registry of extensions.
+This contains a registry of Qt Creator extensions.
 
 ## How to include your plugin
 
