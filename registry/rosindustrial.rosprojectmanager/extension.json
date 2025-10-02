@@ -1,0 +1,92 @@
+{
+    "$schema": "../../schema/extension.schema.json",
+    "info": {
+        "id": "rosprojectmanager",
+        "vendor_id": "rosindustrial",
+        "display_name": "ROS Project Manager",
+        "display_vendor": "ROS Industrial",
+        "license": "open-source"
+    },
+    "latest": "17.0.0",
+    "versions": {
+        "17.0.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/17.0/qtcreator-plugin-ros-17.0-Windows-AMD64.zip",
+                    "sha256": "b0a55e17e8279ed516bdc4717c764d79e5d4646a2f8d69bc4b66496e8f5f163c",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/17.0/qtcreator-plugin-ros-17.0-Linux-x86_64.zip",
+                    "sha256": "1c33a699d7d4a18d1e891ccbd42324471aa2c6b7a3a4bc22655049f39f252244",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/17.0/qtcreator-plugin-ros-17.0-Linux-aarch64.zip",
+                    "sha256": "de3ffbc568ff4ce400b0584a59284e7ac6f55dfe7dc7c65142e489b8d270335c",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/17.0/qtcreator-plugin-ros-17.0-Darwin-arm64.zip",
+                    "sha256": "c20e84bbe3c70c0a2061cb0c74f354ab43f96e820d8f2eb3c43f6e6871e47697",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "rosprojectmanager",
+                "Name": "ROS Project Manager",
+                "Version": "17.0.0",
+                "CompatVersion": "17.0.0",
+                "VendorId": "rosindustrial",
+                "Vendor": "ROS Industrial",
+                "Copyright": "(C) 2015 ROS Industrial",
+                "License": "Commercial Usage\n\nLicensees holding valid Qt Commercial licenses may use this plugin in accordance with the Qt Commercial License Agreement provided with the Software or, alternatively, in accordance with the terms contained in a written agreement between you and The Qt Company.\n\nGNU Lesser General Public License Usage\n\nAlternatively, this plugin may be used under the terms of the GNU Lesser General Public License version 2.1 or version 3 as published by the Free Software Foundation.  Please review the following information to ensure the GNU Lesser General Public License requirements will be met: https: //www.gnu.org/licenses/lgpl.html and http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.",
+                "Category": "Build Systems",
+                "Description": "ROS Support.",
+                "Url": "https://github.com/ros-industrial/ros_qtc_plugin",
+                "Dependencies": [
+                    {
+                        "Id": "cmakeprojectmanager",
+                        "Version": "17.0.0"
+                    },
+                    {
+                        "Id": "core",
+                        "Version": "17.0.0"
+                    },
+                    {
+                        "Id": "cppeditor",
+                        "Version": "17.0.0"
+                    },
+                    {
+                        "Id": "debugger",
+                        "Version": "17.0.0"
+                    },
+                    {
+                        "Id": "projectexplorer",
+                        "Version": "17.0.0"
+                    },
+                    {
+                        "Id": "qtsupport",
+                        "Version": "17.0.0"
+                    },
+                    {
+                        "Id": "texteditor",
+                        "Version": "17.0.0"
+                    }
+                ]
+            }
+        }
+    }
+}
