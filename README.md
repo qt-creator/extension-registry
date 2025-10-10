@@ -18,8 +18,9 @@ This contains a registry of Qt Creator extensions.
 5. Fill in the `sources` array in the newly created `extension.json` file with the urls to your Extension.
 6. Run `git add .` and `git commit -m "Added <your-plugin-id>"`
 7. Push your changes to your fork
-8. Create a pull request to this repository
-9. Wait for approval
+> To test your changes, you can add your fork in Qt Creator under "Settings => Extensions => Repository URLs". Specify the path to your Repositories tar.gz file, e.g. `https://github.com/<your-username>/extension-registry/archive/refs/heads/<your-branch-name>.tar.gz`
+9. Create a pull request to this repository
+10. Wait for approval
 
 ## Fixing / setting SHA keys
 
