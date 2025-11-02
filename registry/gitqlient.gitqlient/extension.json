@@ -7,9 +7,9 @@
         "display_vendor": "GitQlient",
         "license": "open-source"
     },
-    "latest": "1.6.0",
+    "latest": "1.6.1",
     "versions": {
-        "1.6.0": {
+        "1.6.1": {
             "sources": [
                 {
                     "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-Windows-x64.7z",
