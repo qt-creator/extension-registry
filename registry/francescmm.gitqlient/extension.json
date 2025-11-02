@@ -1,0 +1,100 @@
+{
+    "$schema": "../../schema/extension.schema.json",
+    "info": {
+        "id": "gitqlient",
+        "vendor_id": "gitqlient",
+        "display_name": "GitQlient",
+        "display_vendor": "GitQlient",
+        "license": "open-source"
+    },
+    "latest": "1.6.0",
+    "versions": {
+        "1.6.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-Windows-x64.7z",
+                    "sha256": "e679a8b0783bcc3b6987c4f4de3afaecda14bc304164d575b91c40950d3b24eb",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-Windows-arm64.7z",
+                    "sha256": "3a0ce408bfbe068413a19ab8f8403abaa3ed10c8fc1c9360d1bdb6b29ce8974a",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-Linux-x64.7z",
+                    "sha256": "777fb29c07ee1aa16862ad44dcf9fcf56ce036bb4752998b2d91c0de09516416",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-Linux-arm64.7z",
+                    "sha256": "18c02232bd837c9ce0addcd2371e43da29fbcb177bc054f07253791973300ad0",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-macOS-universal.7z",
+                    "sha256": "8ed1cff7f7739e9d26e323c4f3e7ce73ba7e66552ae464cb10ebab32954e34c3",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-macOS-universal.7z",
+                    "sha256": "8ed1cff7f7739e9d26e323c4f3e7ce73ba7e66552ae464cb10ebab32954e34c3",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "gitqlient",
+                "Name": "GitQlient",
+                "Version": "1.6.1",
+                "CompatVersion": "18.0.0",
+                "Vendor": "GitQlient",
+                "VendorId": "gitqlient",
+                "Copyright": "(C) 2025 Francesc M.",
+                "License": "GPLv3",
+                "Description": "This plugins allows the user to work with GitQlient App embedded in QtCreator. It provides a Git UI.",
+                "Url": "https://github.com/francescmaestre/GitQlientPlugin",
+                "DocumentationUrl": "https://github.com/francescmaestre/GitQlientPlugin",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "18.0.0"
+                    },
+                    {
+                        "Id": "texteditor",
+                        "Version": "18.0.0"
+                    },
+                    {
+                        "Id": "projectexplorer",
+                        "Version": "18.0.0"
+                    },
+                    {
+                        "Id": "cppeditor",
+                        "Version": "18.0.0"
+                    },
+                    {
+                        "Id": "core",
+                        "Version": "18.0.0"
+                    }
+                ]
+            }
+        }
+    }
+}
