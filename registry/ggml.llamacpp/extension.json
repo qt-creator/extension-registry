@@ -7,8 +7,193 @@
         "display_vendor": "ggml-org",
         "license": "open-source"
     },
-    "latest": "3.0.0",
+    "latest": "3.0.1",
     "versions": {
+        "3.0.1": {
+            "sources": [
+                {
+                    "url": "https://github.com/cristianadam/llama.qtcreator/releases/download/v3.0.1/LlamaCpp-3.0.1-Windows-x64.7z",
+                    "sha256": "e2f00df103af908b0453292a05a200c6a56fab7f0d3e90ec07a7ae3b5962764c",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/llama.qtcreator/releases/download/v3.0.1/LlamaCpp-3.0.1-Windows-arm64.7z",
+                    "sha256": "ac3ca5977878819c3584109b0ff29d45053591b3e63cc9b147849c9e155216c3",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/llama.qtcreator/releases/download/v3.0.1/LlamaCpp-3.0.1-Linux-x64.7z",
+                    "sha256": "b8cb0a3b6f28a99c99a10b54308ec12516ffd31ffd58aa51f8b57d6663a0979c",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/llama.qtcreator/releases/download/v3.0.1/LlamaCpp-3.0.1-Linux-arm64.7z",
+                    "sha256": "9562a39e3724ed8408fc323c5ec971611d5194ff013d1379a7708dcb1c393aa6",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/llama.qtcreator/releases/download/v3.0.1/LlamaCpp-3.0.1-macOS-universal.7z",
+                    "sha256": "f6d7133af9d55800d9a1d2c54829db63d7454b83b14552e99072413a02c1e8c0",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/llama.qtcreator/releases/download/v3.0.1/LlamaCpp-3.0.1-macOS-universal.7z",
+                    "sha256": "f6d7133af9d55800d9a1d2c54829db63d7454b83b14552e99072413a02c1e8c0",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "llamacpp",
+                "Name": "llama.qtcreator",
+                "Version": "3.0.1",
+                "CompatVersion": "3.0.1",
+                "Vendor": "ggml-org",
+                "VendorId": "ggml",
+                "Copyright": "(C) 2025 The llama.qtcreator Contributors, Copyright (C) The Qt Company Ltd. and other contributors.",
+                "License": "MIT",
+                "Description": "llama.cpp infill completion plugin for Qt Creator",
+                "LongDescription": [
+                    "# llama.qtcreator",
+                    "",
+                    "Local LLM-assisted text completion for Qt Creator.",
+                    "",
+                    "![Qt Creator llama.cpp Text](https://raw.githubusercontent.com/cristianadam/llama.qtcreator/refs/heads/main/screenshots/qtcreator-llamacpp-text@2x.webp)",
+                    "",
+                    "---",
+                    "",
+                    "![Qt Creator llama.cpp Qt Widgets](https://raw.githubusercontent.com/cristianadam/llama.qtcreator/refs/heads/main/screenshots/qtcreator-llamacpp-widgets@2x.webp)",
+                    "",
+                    "",
+                    "## Features",
+                    "",
+                    "- Auto-suggest on cursor movement. Toggle enable / disable with `Ctrl+Shift+G`",
+                    "- Trigger the suggestion manually by pressing `Ctrl+G`",
+                    "- Accept a suggestion with `Tab`",
+                    "- Accept the first line of a suggestion with `Shift+Tab`",
+                    "- Control max text generation time",
+                    "- Configure scope of context around the cursor",
+                    "- Ring context with chunks from open and edited files and yanked text",
+                    "- [Supports very large contexts even on low-end hardware via smart context reuse](https://github.com/ggml-org/llama.cpp/pull/9787)",
+                    "- Speculative FIM support",
+                    "- Speculative Decoding support",
+                    "- Display performance stats",
+                    "- Chat support",
+                    "- Source and Image drag & drop support",
+                    "- Current editor selection predefined and custom LLM prompts",
+                    "- [Tools usage](https://github.com/cristianadam/llama.qtcreator/wiki/Tools)",
+                    "",
+                    "",
+                    "### llama.cpp setup",
+                    "",
+                    "The plugin requires a [llama.cpp](https://github.com/ggml-org/llama.cpp) server instance to be running at:",
+                    "",
+                    "![Qt Creator llama.cpp Settings](https://raw.githubusercontent.com/cristianadam/llama.qtcreator/refs/heads/main/screenshots/qtcreator-llamacpp-settings@2x.webp)",
+                    "",
+                    "",
+                    "#### Mac OS",
+                    "",
+                    "```bash",
+                    "brew install llama.cpp",
+                    "```",
+                    "",
+                    "#### Windows",
+                    "",
+                    "```bash",
+                    "winget install llama.cpp",
+                    "```",
+                    "",
+                    "#### Any other OS",
+                    "",
+                    "Either build from source or use the latest binaries: https://github.com/ggml-org/llama.cpp/releases",
+                    "",
+                    "### llama.cpp settings",
+                    "",
+                    "Here are recommended settings, depending on the amount of VRAM that you have:",
+                    "",
+                    "- More than 16GB VRAM:",
+                    "",
+                    "  ```bash",
+                    "  llama-server --fim-qwen-7b-default",
+                    "  ```",
+                    "",
+                    "- Less than 16GB VRAM:",
+                    "",
+                    "  ```bash",
+                    "  llama-server --fim-qwen-3b-default",
+                    "  ```",
+                    "",
+                    "- Less than 8GB VRAM:",
+                    "",
+                    "  ```bash",
+                    "  llama-server --fim-qwen-1.5b-default",
+                    "  ```",
+                    "",
+                    "Use `llama-server --help` for more details.",
+                    "",
+                    "",
+                    "### Recommended LLMs",
+                    "",
+                    "The plugin requires FIM-compatible models: [HF collection](https://huggingface.co/collections/ggml-org/llamavim-6720fece33898ac10544ecf9)",
+                    "",
+                    "## Examples",
+                    "",
+                    "### A Qt Quick example on MacBook Pro M3 `Qwen2.5-Coder 3B Q8_0`:",
+                    "",
+                    "![Qt Creator llama.cpp Qt Quick](https://raw.githubusercontent.com/cristianadam/llama.qtcreator/refs/heads/main/screenshots/qtcreator-llamacpp-quick@2x.webp)",
+                    "",
+                    "### Chat on a Mac Studio M2 with `gpt-oss 20B`:",
+                    "",
+                    "![Qt Creator llama.cpp Chat](https://raw.githubusercontent.com/cristianadam/llama.qtcreator/refs/heads/main/screenshots/qtcreator-llamacpp-chat.webp)",
+                    "",
+                    "### Using Tools on a MacBook M3 with `gpt-oss 20B`:",
+                    "",
+                    "https://github.com/user-attachments/assets/b38f2d6b-aea8-4879-be17-73f0290e4f71",
+                    "",
+                    "## Implementation details",
+                    "",
+                    "The plugin aims to be very simple and lightweight and at the same time to provide high-quality and performant local FIM completions, even on consumer-grade hardware. ",
+                    "",
+                    "## Other IDEs",
+                    "",
+                    "- Vim/Neovim: https://github.com/ggml-org/llama.vim",
+                    "- VS Code: https://github.com/ggml-org/llama.vscode"
+                ],
+                "Url": "https://github.com/ggml-org/llama.qtcreator",
+                "DocumentationUrl": "",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "18.0.0"
+                    },
+                    {
+                        "Id": "projectexplorer",
+                        "Version": "18.0.0"
+                    },
+                    {
+                        "Id": "texteditor",
+                        "Version": "18.0.0"
+                    }
+                ]
+            }
+        },
         "3.0.0": {
             "sources": [
                 {
