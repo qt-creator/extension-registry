@@ -1,0 +1,84 @@
+{
+    "$schema": "../../schema/extension.schema.json",
+    "info": {
+        "id": "gitqlient",
+        "vendor_id": "gitqlient",
+        "display_name": "GitQlient",
+        "display_vendor": "GitQlient",
+        "license": "open-source"
+    },
+    "latest": "1.6.1",
+    "versions": {
+        "1.6.1": {
+            "sources": [
+                {
+                    "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-Windows-x64.7z",
+                    "sha256": "18a4f6ef2206bf4b0cd5ea77a049bb9b932988bce20445553f2da17d27d76f2f",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-Windows-arm64.7z",
+                    "sha256": "4a25d921667617d0138de9cb8b1396902a44da4354065c23ed546d4ecd1726a2",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-Linux-x64.7z",
+                    "sha256": "b275f3e9fca2ea0689577250a3743625b10dbdd310c9810939688a94395e53dc",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-Linux-arm64.7z",
+                    "sha256": "34aff777ff25d8006041111fe9aded3cddbd2de548f252d5d9093db7d1b0bdd3",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-macOS-universal.7z",
+                    "sha256": "63706ec58132958f51f841c12c9dffc6bd81f2aab88acef2d8c6f728d4db9fcf",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/francescmaestre/GitQlientPlugin/releases/download/v1.6.1/GitQlientPlugin-QtC18.0.0-macOS-universal.7z",
+                    "sha256": "63706ec58132958f51f841c12c9dffc6bd81f2aab88acef2d8c6f728d4db9fcf",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id" : "gitqlient",
+                "Name" : "GitQlient",
+                "Version" : "1.6.1",
+                "Vendor" : "GitQlient",
+                "VendorId" : "gitqlient",
+                "Copyright" : "(C) 2025 Francesc M.",
+                "License" : "GPLv3",
+                "Description" : "This plugins allows the user to work with GitQlient App embedded in QtCreator. It provides a Git UI.",
+                "Url" : "https://github.com/francescmaestre/GitQlientPlugin",
+                "DocumentationUrl" : "https://github.com/francescmaestre/GitQlientPlugin",
+                "Dependencies" : [
+                    { "Id" : "core", "Version" : "18.0.0" },
+                    { "Id" : "texteditor", "Version" : "18.0.0" },
+                    { "Id" : "projectexplorer", "Version" : "18.0.0" },
+                    { "Id" : "cppeditor", "Version" : "18.0.0" },
+                    { "Id" : "core", "Version" : "18.0.0" }
+                ]
+            }
+        }
+    }
+}
