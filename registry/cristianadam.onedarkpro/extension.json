@@ -7,8 +7,111 @@
         "display_vendor": "Cristian Adam",
         "license": "open-source"
     },
-    "latest": "18.0.0",
+    "latest": "19.0.0",
     "versions": {
+        "19.0.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-onedark-pro/releases/download/v19.0.0/OneDarkPro-19.0.0-Windows-x64.7z",
+                    "sha256": "09e1c6bd89ef27526b185e716054b33aa0cd7bce15504304fc9d599adc8ad952",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-onedark-pro/releases/download/v19.0.0/OneDarkPro-19.0.0-Windows-arm64.7z",
+                    "sha256": "e1d2770d021b68fa41e4dfedce18145632c391ed2cf79bf2b02f02d966e70852",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-onedark-pro/releases/download/v19.0.0/OneDarkPro-19.0.0-Linux-x64.7z",
+                    "sha256": "2906c576c9f8ada046b3e7792ae5b2b6b4712c27e4496610d70dc81d267d67c7",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-onedark-pro/releases/download/v19.0.0/OneDarkPro-19.0.0-Linux-arm64.7z",
+                    "sha256": "e4bd89be9cd51315d832cfe5ee52522b62d3ed798cb53a962cec0e64aa35ccbf",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-onedark-pro/releases/download/v19.0.0/OneDarkPro-19.0.0-macOS-universal.7z",
+                    "sha256": "4c7ff165b00c3bd3e7de8003cb93bd889647e0694202682b9c8bb96a4afb87e3",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-onedark-pro/releases/download/v19.0.0/OneDarkPro-19.0.0-macOS-universal.7z",
+                    "sha256": "4c7ff165b00c3bd3e7de8003cb93bd889647e0694202682b9c8bb96a4afb87e3",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "onedarkpro",
+                "Name": "OneDark Pro",
+                "Version": "19.0.0",
+                "CompatVersion": "19.0.0",
+                "Vendor": "Cristian Adam",
+                "VendorId": "cristianadam",
+                "Copyright": "(C) 2013-2022 Binaryify, Cristian Adam, Copyright (C) The Qt Company Ltd. and other contributors.",
+                "License": "MIT",
+                "SoftLoadable": true,
+                "Description": "Atom's iconic One Dark theme.",
+                "LongDescription": [
+                    "Atom's iconic One Dark theme, and one of the most installed [themes](https://marketplace.visualstudio.com/search?target=VSCode&category=Themes&sortBy=Installs) for VS Code!",
+                    "",
+                    "![Screenshot](https://raw.githubusercontent.com/cristianadam/qt-creator-onedark-pro/refs/heads/main/screenshot.png)",
+                    "",
+                    "# License",
+                    "",
+                    "```",
+                    "The MIT License (MIT)",
+                    "",
+                    "Copyright (c) 2013-2022 Binaryify",
+                    "",
+                    "Permission is hereby granted, free of charge, to any person obtaining a copy",
+                    "of this software and associated documentation files (the \"Software\"), to deal",
+                    "in the Software without restriction, including without limitation the rights",
+                    "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+                    "copies of the Software, and to permit persons to whom the Software is",
+                    "furnished to do so, subject to the following conditions:",
+                    "",
+                    "The above copyright notice and this permission notice shall be included in",
+                    "all copies or substantial portions of the Software.",
+                    "",
+                    "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",
+                    "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",
+                    "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE",
+                    "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",
+                    "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",
+                    "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN",
+                    "THE SOFTWARE.",
+                    "```"
+                ],
+                "Url": "https://github.com/cristianadam/qt-creator-onedark-pro",
+                "DocumentationUrl": "",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "19.0.0"
+                    }
+                ]
+            }
+        },
         "18.0.0": {
             "sources": [
                 {
