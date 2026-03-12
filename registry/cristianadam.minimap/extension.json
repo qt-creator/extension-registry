@@ -7,8 +7,117 @@
         "display_vendor": "Cristian Adam",
         "license": "open-source"
     },
-    "latest": "18.0.0",
+    "latest": "19.0.0",
     "versions": {
+        "19.0.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-minimap/releases/download/v19.0.0/MinimapPlugin-19.0.0-Windows-x64.7z",
+                    "sha256": "b5b104c115d87b9aeffa254b42e6508c7fcd9558c785505aaed0ed198ae00877",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-minimap/releases/download/v19.0.0/MinimapPlugin-19.0.0-Windows-arm64.7z",
+                    "sha256": "ba25fbc1f13765895111f11516b9e15cc3618f60c11fcf4d307189fe4497cf42",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-minimap/releases/download/v19.0.0/MinimapPlugin-19.0.0-Linux-x64.7z",
+                    "sha256": "1cf9a6063c32399dee1edf4821ad56acda577cf798ca81450c4dc005b76846ce",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-minimap/releases/download/v19.0.0/MinimapPlugin-19.0.0-Linux-arm64.7z",
+                    "sha256": "bd565aba9379b5da940d23b23ddab1c95e83392f1119440faa974e6b835b7320",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-minimap/releases/download/v19.0.0/MinimapPlugin-19.0.0-macOS-universal.7z",
+                    "sha256": "303749a284f437c3aec72ed33fd82a95c15144f476d959a0133b5d0935553529",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-minimap/releases/download/v19.0.0/MinimapPlugin-19.0.0-macOS-universal.7z",
+                    "sha256": "303749a284f437c3aec72ed33fd82a95c15144f476d959a0133b5d0935553529",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "minimap",
+                "Name": "Minimap",
+                "Version": "19.0.0",
+                "CompatVersion": "19.0.0",
+                "Vendor": "Cristian Adam",
+                "VendorId": "cristianadam",
+                "Copyright": "(C) 2017 emJay SOftware Consulting AB, Cristian Adam, Copyright (C) The Qt Company Ltd. and other contributors.",
+                "License": "GNU LGPL 2.1",
+                "Description": "Minimap scrollbar for Qt Creator",
+                "LongDescription": [
+                    "# Minimap Qt Creator plugin",
+                    "",
+                    "The minimap Qt Creator plugin lets the user use a \"minimap\" as scrollbar for text editors.",
+                    "",
+                    "# Screenshots",
+                    "",
+                    "![qt-creator-minimap-light.png](https://raw.githubusercontent.com/cristianadam/qt-creator-minimap/refs/heads/master/screenshots/qt-creator-minimap-light.png)",
+                    "",
+                    "![qt-creator-minimap-dark.png](https://raw.githubusercontent.com/cristianadam/qt-creator-minimap/refs/heads/master/screenshots/qt-creator-minimap-dark.png)",
+                    "",
+                    "",
+                    "The minimap is only visible if is enabled, and text wrapping is **disabled** and if the line count of the file is less than the *Line Count Threshold* setting. If these criterias are not met an ordinary scrollbar is shown.",
+                    "",
+                    "Larger textfiles tend to render a rather messy minimap. Therefore the setting *Line Count Threshold* exist for the user to customize when the minimap is to be shown or not.",
+                    "",
+                    "You can edit the settings under *Minimap* tab in the *Text Editor* category. There are three settings available:",
+                    "",
+                    "* Enabled",
+                    "",
+                    "    Uncheck this box to completely disable the minimap srcollbar",
+                    "",
+                    "* Width",
+                    "",
+                    "    The width in pixels of the scrollbar.",
+                    "",
+                    "* Line Count Threshold",
+                    "",
+                    "    The threshold where minimap scrollbar",
+                    "",
+                    "* Scrollbar slider alpha value",
+                    "",
+                    "    The alpha value of the scrollbar slider"
+                ],
+                "Url": "https://github.com/cristianadam/qt-creator-minimap",
+                "DocumentationUrl": "",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "19.0.0"
+                    },
+                    {
+                        "Id": "texteditor",
+                        "Version": "19.0.0"
+                    }
+                ]
+            }
+        },
         "18.0.0": {
             "sources": [
                 {
