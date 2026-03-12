@@ -7,8 +7,120 @@
         "display_vendor": "Cristian Adam",
         "license": "open-source"
     },
-    "latest": "18.0.0",
+    "latest": "19.0.0",
     "versions": {
+        "19.0.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-nomo-icontheme/releases/download/v19.0.0/NomoIconTheme-19.0.0-Windows-x64.7z",
+                    "sha256": "e6e9b561a41e12e390251ed5352abd40b0ae64872684af24a99b0cdefcc6dc30",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-nomo-icontheme/releases/download/v19.0.0/NomoIconTheme-19.0.0-Windows-arm64.7z",
+                    "sha256": "0fc5bf117906ddcfe0c483dcb360512f5282ef81233e86328c3f2cc4b3bda9c8",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-nomo-icontheme/releases/download/v19.0.0/NomoIconTheme-19.0.0-Linux-x64.7z",
+                    "sha256": "2198d913c59c3bbe42542fed58c32be6464c75b8e9ae9320be2a68d7acadb2b9",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-nomo-icontheme/releases/download/v19.0.0/NomoIconTheme-19.0.0-Linux-arm64.7z",
+                    "sha256": "826077a4f49dd9e2ece07aaeaee2c4fd1bb9e9195337a4e4b95cb37b2403c5f9",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-nomo-icontheme/releases/download/v19.0.0/NomoIconTheme-19.0.0-macOS-universal.7z",
+                    "sha256": "09db15dc76481331c05c1eb0c804aa9ca9493b89192f177530037d356b1ce76c",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-nomo-icontheme/releases/download/v19.0.0/NomoIconTheme-19.0.0-macOS-universal.7z",
+                    "sha256": "09db15dc76481331c05c1eb0c804aa9ca9493b89192f177530037d356b1ce76c",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "nomoicontheme",
+                "Name": "Nomo Icon Theme",
+                "Version": "19.0.0",
+                "CompatVersion": "19.0.0",
+                "Vendor": "Cristian Adam",
+                "VendorId": "cristianadam",
+                "Copyright": "(C) 2019 Andreas Schulz, Cristian Adam, Copyright (C) The Qt Company Ltd. and other contributors.",
+                "License": "MIT",
+                "SoftLoadable": true,
+                "Description": "Custon icon theme for Qt Creator",
+                "LongDescription": [
+                    "# Qt Creator Nomo Icon Theme",
+                    "",
+                    "Custom icon theme for [Qt Creator](https://www.qt.io/product/development-tools).",
+                    "Based upon [Nomo Dark icon set for Visual Studio Code](https://github.com/be5invis/vscode-iconset).",
+                    "",
+                    "# Screenshots",
+                    "",
+                    "![Screenshot-macOS](https://raw.githubusercontent.com/cristianadam/qt-creator-nomo-icontheme/refs/heads/master/screenshots/macOS.png)",
+                    "![Screenshot-Linux](https://raw.githubusercontent.com/cristianadam/qt-creator-nomo-icontheme/refs/heads/master/screenshots/Linux.png)",
+                    "![Screenshot-Windows](https://raw.githubusercontent.com/cristianadam/qt-creator-nomo-icontheme/refs/heads/master/screenshots/Windows.png)",
+                    "",
+                    "# License",
+                    "",
+                    "```",
+                    "MIT License",
+                    "",
+                    "Copyright 2025 Cristian Adam",
+                    "Copyright 2017-2021 Renzhi Li (a.k.a Belleve Invis)",
+                    "Copyright (c) 2019 Andreas Schulz",
+                    "",
+                    "Permission is hereby granted, free of charge, to any person obtaining a copy",
+                    "of this software and associated documentation files (the \"Software\"), to deal",
+                    "in the Software without restriction, including without limitation the rights",
+                    "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+                    "copies of the Software, and to permit persons to whom the Software is",
+                    "furnished to do so, subject to the following conditions:",
+                    "",
+                    "The above copyright notice and this permission notice shall be included in all",
+                    "copies or substantial portions of the Software.",
+                    "",
+                    "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",
+                    "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",
+                    "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE",
+                    "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",
+                    "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",
+                    "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE",
+                    "SOFTWARE.",
+                    "```"
+                ],
+                "Url": "https://github.com/cristianadam/qt-creator-icontheme",
+                "DocumentationUrl": "",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "19.0.0"
+                    }
+                ]
+            }
+        },
         "18.0.0": {
             "sources": [
                 {
