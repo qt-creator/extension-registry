@@ -15,6 +15,46 @@
     },
     "latest": "0.7.0",
     "versions": {
+        "1.0.4": {
+            "sources": [
+                {
+                    "url": "https://github.com/qt-creator/plugin-vale-languageserver/releases/download/v1.0.4/ValeLS.zip",
+                    "sha256": "f63545a28460cd4bfa3bded166f5962e22c4d82230fd513deef958de732f5f10"
+                }
+            ],
+            "metadata": {
+                "Id": "vale",
+                "Url": "https://www.qt.io",
+                "Name": "Vale Language Server",
+                "Tags": [
+                    "language server",
+                    "Vale",
+                    "ValeLS",
+                    "Qt"
+                ],
+                "Vendor": "The Qt Company",
+                "License": "GPL",
+                "Version": "1.0.4",
+                "Category": "Language Server",
+                "VendorId": "theqtcompany",
+                "Copyright": "(C) The Qt Company 2024",
+                "Type": "Script",
+                "Languages": [
+                    "en",
+                    "de"
+                ],
+                "Description": "Provides an integration of the Vale language server",
+                "Dependencies": [
+                    {
+                        "Id": "lualanguageclient",
+                        "Version": "15.0.0"
+                    }
+                ],
+                "Experimental": true,
+                "CompatVersion": "1.0.0",
+                "DisabledByDefault": false
+            }
+        },
         "1.0.3": {
             "sources": [
                 {
