@@ -7,8 +7,126 @@
         "display_vendor": "Cristian Adam",
         "license": "open-source"
     },
-    "latest": "19.0.0",
+    "latest": "20.0.0",
     "versions": {
+        "20.0.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v20.0.0/PhantomStylePlugin-20.0.0-Windows-x64.7z",
+                    "sha256": "a0e4edeb30007d0254a0e7010ed3325188ba77017b6aa347034ab2cb96215ba2",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v20.0.0/PhantomStylePlugin-20.0.0-Windows-arm64.7z",
+                    "sha256": "857afa48b66e68c7ba782a12cedd76fab7b1b52e427f878647a276f06e58c347",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v20.0.0/PhantomStylePlugin-20.0.0-Linux-x64.7z",
+                    "sha256": "8aa77f98305b9fdbb38a0e4ded1d1d9d4b00a4ac166b2ea0f0f7b5718ea5f11f",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v20.0.0/PhantomStylePlugin-20.0.0-Linux-arm64.7z",
+                    "sha256": "3abcdae8635d799202116deb3e2860b375011bb6a2c76c2cc74a0268c77a0a8e",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v20.0.0/PhantomStylePlugin-20.0.0-macOS-universal.7z",
+                    "sha256": "217e32204a072823c1641dc710762e38115f8177b3c0104b90f0adad5d76c3e7",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-phantomstyle/releases/download/v20.0.0/PhantomStylePlugin-20.0.0-macOS-universal.7z",
+                    "sha256": "217e32204a072823c1641dc710762e38115f8177b3c0104b90f0adad5d76c3e7",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "phantomstyle",
+                "Url": "https://github.com/cristianadam/qt-creator-phantomstyle",
+                "Name": "PhantomStyle",
+                "Vendor": "Cristian Adam",
+                "License": "GNU LGPL 2.1",
+                "Version": "20.0.0",
+                "VendorId": "cristianadam",
+                "Copyright": "(C) 2019 Andrew Richards, Cristian Adam, Copyright (C) The Qt Company Ltd. and other contributors.",
+                "Description": "PhantomStyle for Qt Creator",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "20.0.0"
+                    }
+                ],
+                "SoftLoadable": true,
+                "CompatVersion": "20.0.0",
+                "LongDescription": [
+                    "# Qt Creator PhantomStyle Plugin",
+                    "",
+                    "This plugin will set the PhantomStyle QStyle for Qt Creator.",
+                    "",
+                    "# Phantom Style",
+                    "",
+                    "\"Phantom is a QStyle for Qt which began as an overhaul of QFusionStyle. Similar to",
+                    "Fusion, it's designed to be a looks-the-same cross-platform style. It looks native",
+                    "to nobody, but familiar to many. It has the visual appearance of a traditional GUI,",
+                    "and does not adopt a \"modern flat\" style. Compared to Fusion, it has many fixes,",
+                    "objective improvements, and subjective improvements.\"",
+                    "",
+                    "For details see the [phantomstyle](https://github.com/cristianadam/phantomstyle) ",
+                    "project page.",
+                    "",
+                    "# Screenshots",
+                    "",
+                    "![qtcreator-light-theme.png](https://raw.githubusercontent.com/cristianadam/qt-creator-phantomstyle/refs/heads/main/screenshots/qtcreator-light-theme.png)",
+                    "",
+                    "![qtcreator-dark-theme.png](https://raw.githubusercontent.com/cristianadam/qt-creator-phantomstyle/refs/heads/main/screenshots/qtcreator-dark-theme.png)",
+                    "",
+                    "# License",
+                    "",
+                    "LGPL 2.1.",
+                    "",
+                    "```",
+                    "Phantom Style",
+                    "Copyright (C) 2019 Andrew Richards",
+                    "",
+                    "This library is free software; you can redistribute it and/or",
+                    "modify it under the terms of the GNU Library General Public",
+                    "License as published by the Free Software Foundation; either",
+                    "version 2 of the License, or (at your option) any later version.",
+                    "",
+                    "This library is distributed in the hope that it will be useful,",
+                    "but WITHOUT ANY WARRANTY; without even the implied warranty of",
+                    "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU",
+                    "Library General Public License for more details.",
+                    "",
+                    "You should have received a copy of the GNU Library General Public",
+                    "License along with this library; if not, write to the",
+                    "Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,",
+                    "Boston, MA  02110-1301, USA.",
+                    "```"
+                ],
+                "DocumentationUrl": ""
+            }
+        },
         "19.0.0": {
             "sources": [
                 {
