@@ -15,7 +15,7 @@
             "Code Folding"
         ]
     },
-    "latest": "1.0.0",
+    "latest": "1.1.0",
     "versions": {
         "0.9.1": {
             "sources": [
@@ -153,6 +153,95 @@
                 "Id": "stickyscroll",
                 "Name": "Sticky Scroll",
                 "Version": "1.0.0",
+                "CompatVersion": "20.0.0",
+                "Vendor": "Petr Mironychev",
+                "VendorId": "petrmironychev",
+                "Copyright": "(C) Petr Mironychev, Copyright (C) The Qt Company Ltd. and other contributors.",
+                "License": "MIT",
+                "Category": "Text Editor",
+                "Description": "Pins the enclosing scope headers (function, class, block, key, or heading) to the top of the editor while you scroll, so the surrounding context stays visible. Click a pinned line to jump to it.",
+                "LongDescription": [
+                    "![Sticky Scroll demo](https://github.com/user-attachments/assets/c7d105aa-b75f-493d-8bd7-10f8480c5b29)",
+                    "",
+                    "Keeps the code you are reading in context: the enclosing scope headers — function, class, block, key, or heading — stay pinned to the top of the editor as you scroll. Click a pinned line to jump straight to it.",
+                    "",
+                    "The pinned lines are derived from the document structure, chosen automatically per file type: code folding for C, C++, JavaScript/TypeScript, JSON, CMake, Python and any language whose highlighter folds; indentation for YAML; ATX heading levels for Markdown.",
+                    "",
+                    "Toggle the feature and set the maximum number of pinned lines on the Sticky Scroll page in the text editor settings."
+                ],
+                "Url": "https://github.com/Palm1r/qt-creator-sticky-scroll",
+                "DocumentationUrl": "https://github.com/Palm1r/qt-creator-sticky-scroll#readme",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "20.0.0"
+                    },
+                    {
+                        "Id": "texteditor",
+                        "Version": "20.0.0"
+                    },
+                    {
+                        "Id": "languageclient",
+                        "Version": "20.0.0"
+                    }
+                ]
+            }
+        },
+        "1.1.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/Palm1r/qt-creator-sticky-scroll/releases/download/v1.1.0/StickyScroll-1.1.0-QtC20.0.0-Windows-x64.7z",
+                    "sha256": "6ef2564256513bf2e9a4a5cc2956b95c540376fb13a0ff5a202b30427ca7724e",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/Palm1r/qt-creator-sticky-scroll/releases/download/v1.1.0/StickyScroll-1.1.0-QtC20.0.0-Windows-arm64.7z",
+                    "sha256": "92ea9b05050669fc3a4677b4e15879dca2fcafcc1d6607823d7bcb41b2e6551b",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/Palm1r/qt-creator-sticky-scroll/releases/download/v1.1.0/StickyScroll-1.1.0-QtC20.0.0-Linux-x64.7z",
+                    "sha256": "eb78641fe70446276259acc55637fd5edf7cd762d85847dfb1851c91ce803876",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/Palm1r/qt-creator-sticky-scroll/releases/download/v1.1.0/StickyScroll-1.1.0-QtC20.0.0-Linux-arm64.7z",
+                    "sha256": "61cc77af84f3bd855f11b1d7329ed2d40c47e5f70b7404db1ea1021bace0b1df",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/Palm1r/qt-creator-sticky-scroll/releases/download/v1.1.0/StickyScroll-1.1.0-QtC20.0.0-macOS-universal.7z",
+                    "sha256": "44e23d560fa2b28e1e53f7ac53c11cf0c4552aa78aa9f13004f334d2e6850424",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/Palm1r/qt-creator-sticky-scroll/releases/download/v1.1.0/StickyScroll-1.1.0-QtC20.0.0-macOS-universal.7z",
+                    "sha256": "44e23d560fa2b28e1e53f7ac53c11cf0c4552aa78aa9f13004f334d2e6850424",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "stickyscroll",
+                "Name": "Sticky Scroll",
+                "Version": "1.1.0",
                 "CompatVersion": "20.0.0",
                 "Vendor": "Petr Mironychev",
                 "VendorId": "petrmironychev",
