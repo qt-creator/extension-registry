@@ -1,0 +1,49 @@
+{
+    "$schema": "../../schema/extension.schema.json",
+    "info": {
+        "id": "felgoqmlhotreload",
+        "vendor_id": "felgo",
+        "display_name": "Felgo QML Hot Reload",
+        "display_vendor": "Felgo",
+        "license": "open-source"
+    },
+    "latest": "1.0.0",
+    "versions": {
+        "1.0.0": {
+            "sources": [
+                {
+                    "url": "https://install.felgo.com/extensions/qtcreator-fhr_1-0-0.zip",
+                    "sha256": "e77a404fcec5cd0c01f7b97ffcaf36991e7cb43c707205af17951cb19545e743"
+                }
+            ],
+            "metadata": {
+                "Id": "felgoqmlhotreload",
+                "Name": "Felgo QML Hot Reload",
+                "Version": "1.0.0",
+                "CompatVersion": "1.0.0",
+                "VendorId": "felgo",
+                "Vendor": "Felgo",
+                "Copyright": "(C) FELGO GmbH",
+                "License": "MIT",
+                "Url": "https://felgo.com/qml-hot-reload",
+                "Type": "Script",
+                "Description": "Enable real-time reload of QML and JavaScript code",
+                "LongDescription": [
+                    "Felgo QML Hot Reload updates QML and JavaScript code in your running application without recompiling and redeploying after each change.",
+                    "",
+                    "Unlike Live Reload, it preserves the application's current state after a reload and can run on multiple devices simultaneously to test and iterate code.",
+                    "Felgo Hot Reload supports all Qt target platforms and architectures.",
+                    ""
+                ],
+                "Dependencies": [
+                    {
+                        "Id": "lua",
+                        "Version": "18.0.0"
+                    }
+                ],
+                "Experimental": false,
+                "DisabledByDefault": true
+            }
+        }
+    }
+}
