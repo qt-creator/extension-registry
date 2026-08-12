@@ -1,0 +1,113 @@
+{
+    "$schema": "../../schema/extension.schema.json",
+    "info": {
+        "id": "nordqtcreator",
+        "vendor_id": "petrmironychev",
+        "display_name": "Nord Theme",
+        "display_vendor": "Petr Mironychev",
+        "license": "open-source",
+        "tags": [
+            "Theme",
+            "Themes",
+            "Nord",
+            "Color Scheme",
+            "Dark Theme",
+            "Light Theme",
+            "Editor"
+        ]
+    },
+    "latest": "0.1.0",
+    "versions": {
+        "0.1.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/Palm1r/nord-qtcreator/releases/download/v0.1.0/NordQtCreator-0.1.0-QtC20.0.0-Windows-x64.7z",
+                    "sha256": "e00f8801650af0c6b245625b1520490ab9439698b4aefd6599bc90eb33c26b65",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/Palm1r/nord-qtcreator/releases/download/v0.1.0/NordQtCreator-0.1.0-QtC20.0.0-Windows-arm64.7z",
+                    "sha256": "119c5c1eafdcb3fe17b59a057fe2c0229b2bc84030021d2c2fb4d1b02ef3393f",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/Palm1r/nord-qtcreator/releases/download/v0.1.0/NordQtCreator-0.1.0-QtC20.0.0-Linux-x64.7z",
+                    "sha256": "2f86a2d606eed2c10a632c4e54806679856f8c6049d92213457612e06841eb70",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/Palm1r/nord-qtcreator/releases/download/v0.1.0/NordQtCreator-0.1.0-QtC20.0.0-Linux-arm64.7z",
+                    "sha256": "0f02dd631b1215af7c78f38071fb381420516b5bfe5c98fb5e0358b0926c745c",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/Palm1r/nord-qtcreator/releases/download/v0.1.0/NordQtCreator-0.1.0-QtC20.0.0-macOS-universal.7z",
+                    "sha256": "c2b04afeb7ed0294d4f1dcb9854d5d4e41b8e71ae3a623fd9fe3465ea04b85dd",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/Palm1r/nord-qtcreator/releases/download/v0.1.0/NordQtCreator-0.1.0-QtC20.0.0-macOS-universal.7z",
+                    "sha256": "c2b04afeb7ed0294d4f1dcb9854d5d4e41b8e71ae3a623fd9fe3465ea04b85dd",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "nordqtcreator",
+                "Name": "Nord Theme",
+                "Version": "0.1.0",
+                "CompatVersion": "20.0.0",
+                "Vendor": "Petr Mironychev",
+                "VendorId": "petrmironychev",
+                "Copyright": "(C) Petr Mironychev, Nord palette (C) 2016-present Sven Greb, Copyright (C) The Qt Company Ltd. and other contributors.",
+                "License": "MIT",
+                "Category": "Themes",
+                "Description": "Nord theme and editor color scheme for Qt Creator, based on the arctic Nord palette (https://www.nordtheme.com).",
+                "LongDescription": [
+                    "![Nord theme in Qt Creator](https://github.com/user-attachments/assets/306af5f4-fdf4-482c-8ed4-206c12962901)",
+                    "",
+                    "An arctic, north-bluish look for Qt Creator, built on the [Nord](https://www.nordtheme.com) palette: Polar Night backgrounds, Snow Storm text, Frost and Aurora accents, and the official Nord terminal colors.",
+                    "",
+                    "Four themes are installed — **Nord** and **Nord Light**, plus **Nord Fusion** and **Nord Light Fusion**, which paint the same colors through Qt's Fusion widget style so that the editor tab bar follows the theme as well. The light variants keep the Snow Storm background and darken the Frost and Aurora accents so they stay readable on white.",
+                    "",
+                    "Two matching editor color schemes come with them, following the conventions of the official Nord ports: keywords in Frost blue, strings in Aurora green, numbers in Aurora purple. The scheme is applied automatically when you select one of the Nord themes.",
+                    "",
+                    "![Nord Light](https://github.com/user-attachments/assets/a8e4a317-3e68-492e-9946-3c46dfacb925)",
+                    "",
+                    "![Nord editor color scheme](https://github.com/user-attachments/assets/ad10bebc-f41e-43a4-bcdc-66bceff38272)",
+                    "",
+                    "![Nord Fusion](https://github.com/user-attachments/assets/8cfb3bfb-b806-4094-bcb1-0d13e31cfc03)",
+                    "",
+                    "Nothing is switched on behind your back: the plugin only installs the theme files, and picking a theme stays your call — Preferences > Environment > Interface, then restart Qt Creator.",
+                    "",
+                    "The Nord palette is (C) 2016-present Sven Greb, MIT license."
+                ],
+                "Url": "https://github.com/Palm1r/nord-qtcreator",
+                "DocumentationUrl": "https://github.com/Palm1r/nord-qtcreator#readme",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "20.0.0"
+                    }
+                ]
+            }
+        }
+    }
+}
