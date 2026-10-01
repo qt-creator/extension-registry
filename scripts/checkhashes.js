@@ -67,7 +67,7 @@ async function main(argv) {
     const to = argv[3] || 'HEAD';
 
     console.log(`Checking for changes from ${styleText('blue', from)} to ${styleText('blue', to)}`);
-    const { stdout, stderr } = await execAsync(`git diff --name-only ${from}...${to}`);
+    const { stdout, stderr } = await execAsync(`git diff --name-only --diff-filter=d ${from}...${to}`);
     if (stderr) {
         console.error(stderr);
         return 1;
