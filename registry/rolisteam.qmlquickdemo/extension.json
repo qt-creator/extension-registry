@@ -1,0 +1,101 @@
+{
+    "$schema": "../../schema/extension.schema.json",
+    "info": {
+        "id": "qmlquickdemo",
+        "vendor_id": "rolisteam",
+        "display_name": "QML Quick Demo",
+        "display_vendor": "Rolisteam",
+        "license": "open-source"
+    },
+    "latest": "20.0.1",
+    "versions": {
+        "20.0.1": {
+            "sources": [
+                {
+                    "url": "https://github.com/obiwankennedy/QmlSampleEditor/releases/download/v1.0.0/QML.Quick.Demo-20.0.2-Linux-arm64.7z",
+                    "sha256": "7675216ebdf3bba728a8b090bc150ae202ff8836b5b392ddca6af65c6d9eb244",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/obiwankennedy/QmlSampleEditor/releases/download/v1.0.0/QML.Quick.Demo-20.0.2-Linux-x64.7z",
+                    "sha256": "200c5e4a0b7e13c4b24a57cb970b58ce0a086d87ed98f59c110838eaaa505afb",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/obiwankennedy/QmlSampleEditor/releases/download/v1.0.0/QML.Quick.Demo-20.0.2-macOS-universal.7z",
+                    "sha256": "2158fd39fac31a6680070f6a481f14402db4bd587f6104d6858f094dfdb9dde3",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/obiwankennedy/QmlSampleEditor/releases/download/v1.0.0/QML.Quick.Demo-20.0.2-macOS-universal.7z",
+                    "sha256": "2158fd39fac31a6680070f6a481f14402db4bd587f6104d6858f094dfdb9dde3",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/obiwankennedy/QmlSampleEditor/releases/download/v1.0.0/QML.Quick.Demo-20.0.2-Windows-arm64.7z",
+                    "sha256": "1765dd86965c00d6379f6528143e602ffdf2832eba7734ecac27ee77ee653891",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/obiwankennedy/QmlSampleEditor/releases/download/v1.0.0/QML.Quick.Demo-20.0.2-Windows-x64.7z",
+                    "sha256": "02c2ef637a04e04d9ce257865ba72297249e6d86f3b6d4266f5d61ba8f317053",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "qmlquickdemo",
+                "Name": "QML Quick Demo",
+                "Version": "20.0.1",
+                "CompatVersion": "20.0.0",
+                "Vendor": "Rolisteam",
+                "VendorId": "rolisteam",
+                "Copyright": "(C) Rolisteam",
+                "License": "GPLv3",
+                "Description": "Edit QML code sample and see the result, now!.",
+                "LongDescription": "# QMLQuickDemo\n\n## Overview\n\nVideo: http://renaudguezennec.eu/backup/2025/08/examples.mp4\n\n**QML Quick Demo** is a Qt Creator plugin that provides an all-in-one environment for experimenting with and learning QML.\n\nIt brings everything you need into a single window:\n\n- **QML Editor** — write and edit your QML code with syntax highlighting.\n- **Live QML View** — see the result of your code immediately.\n- **Log Panel** — monitor QML errors, warnings, and runtime messages.\n\nThe QML view is automatically refreshed whenever the source code is modified, making it easy to experiment with QML and instantly see the effect of your changes.\n\n## QML Examples\n\nThe plugin also includes a collection of ready-to-use QML examples organized into different categories. They provide simple, focused examples that can be used to discover QML features, experiment with UI components, and understand how different concepts work.\n\nSimply select an example, modify the code, and see the result live.\n\n## Why QML Quick Demo?\n\nQML Quick Demo is designed to make QML experimentation as simple and interactive as possible:\n\n> **Write → See the result → Experiment**\n\nThere is no need to switch between multiple editors, applications, or preview windows. Everything is available directly inside Qt Creator.\n\n## More information\n\nFor more information about QML Quick Demo, visit the [project page](http://renaudguezennec.eu/projects/plugin-qt-creator/).\n\nThe source code is available on [GitHub](https://github.com/obiwankennedy/QmlSampleEditor).\n\n## Building\n\nThe plugin can be built as a standard Qt Creator plugin using CMake. See the build instructions below for more information.\n\n## How to Build\n\nCreate a build directory and run\n\n    cmake -DCMAKE_PREFIX_PATH=<path_to_qtcreator> -DCMAKE_BUILD_TYPE=RelWithDebInfo <path_to_plugin_source>\n    cmake --build .\n\nwhere `<path_to_qtcreator>` is the relative or absolute path to a Qt Creator build directory, or to a\ncombined binary and development package (Windows / Linux), or to the `Qt Creator.app/Contents/Resources/`\ndirectory of a combined binary and development package (macOS), and `<path_to_plugin_source>` is the\nrelative or absolute path to this plugin directory.\n\n## How to Run\n\nFrom the command line run\n\n    cmake --build . --target RunQtCreator\n\n`RunQtCreator` is a custom CMake target that will use the <path to qtcreator> referenced above to\nstart the Qt Creator executable with the following parameters\n\n    -pluginpath <path_to_plugin>\n\nwhere `<path_to_plugin>` is the path to the resulting plugin library in the build directory\n(`<plugin_build>/lib/qtcreator/plugins` on Windows and Linux,\n`<plugin_build>/Qt Creator.app/Contents/PlugIns` on macOS).\n\nYou might want to add `-temporarycleansettings` (or `-tcs`) to ensure that the opened Qt Creator\ninstance cannot mess with your user-global Qt Creator settings.\n",
+                "Url": "https://www.rolisteam.org",
+                "DocumentationUrl": "http://renaudguezennec.eu/projects/plugin-qt-creator/",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "20.0.1"
+                    },
+                    {
+                        "Id": "texteditor",
+                        "Version": "20.0.1"
+                    },
+                    {
+                        "Id": "qmljseditor",
+                        "Version": "20.0.1"
+                    },
+                    {
+                        "Id": "qmljstools",
+                        "Version": "20.0.1"
+                    },
+                    {
+                        "Id": "languageclient",
+                        "Version": "20.0.1"
+                    }
+                ]
+            }
+        }
+    }
+}
