@@ -1,0 +1,100 @@
+{
+    "$schema": "../../schema/extension.schema.json",
+    "info": {
+        "id": "rosprojectmanager",
+        "vendor_id": "rosindustrial",
+        "display_name": "ROS Project Manager",
+        "display_vendor": "ROS Industrial",
+        "license": "open-source"
+    },
+    "latest": "18.0.0",
+    "versions": {
+        "18.0.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/18.0/qtcreator-plugin-ros-18.0-Windows-AMD64.zip",
+                    "sha256": "9529ae891a59167b0f55d2fbc77b4d64907d76968f92fd7be7c83b7cb5030556",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/18.0/qtcreator-plugin-ros-18.0-Windows-ARM64.zip",
+                    "sha256": "9d8716382919c18a58869bf02a6288b6d24f2780cad2044fcc214d325b4f311b",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/18.0/qtcreator-plugin-ros-18.0-Linux-x86_64.zip",
+                    "sha256": "8bf6a2aa2ac93c9f12b5139fbc558d6091cb6d5368ff7519a91ae750ccf67ed1",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/18.0/qtcreator-plugin-ros-18.0-Linux-aarch64.zip",
+                    "sha256": "1f5b24a6e801f9cf9296094c40d6b3b414e8b8ccc721545220f6277bfafcf034",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/18.0/qtcreator-plugin-ros-18.0-Darwin-arm64.zip",
+                    "sha256": "61d642e4e5535ce207d9cd77bc236fee9109d255537439efbbc34f359b94c753",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "rosprojectmanager",
+                "Name": "ROS Project Manager",
+                "Version": "18.0.0",
+                "CompatVersion": "18.0.0",
+                "VendorId": "rosindustrial",
+                "Vendor": "ROS Industrial",
+                "Copyright": "(C) 2015 ROS Industrial",
+                "License": "Commercial Usage\n\nLicensees holding valid Qt Commercial licenses may use this plugin in accordance with the Qt Commercial License Agreement provided with the Software or, alternatively, in accordance with the terms contained in a written agreement between you and The Qt Company.\n\nGNU Lesser General Public License Usage\n\nAlternatively, this plugin may be used under the terms of the GNU Lesser General Public License version 2.1 or version 3 as published by the Free Software Foundation.  Please review the following information to ensure the GNU Lesser General Public License requirements will be met: https: //www.gnu.org/licenses/lgpl.html and http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.",
+                "Category": "Build Systems",
+                "Description": "ROS Support.",
+                "Url": "https://github.com/ros-industrial/ros_qtc_plugin",
+                "Dependencies": [
+                    {
+                        "Id": "cmakeprojectmanager",
+                        "Version": "18.0.0"
+                    },
+                    {
+                        "Id": "core",
+                        "Version": "18.0.0"
+                    },
+                    {
+                        "Id": "cppeditor",
+                        "Version": "18.0.0"
+                    },
+                    {
+                        "Id": "debugger",
+                        "Version": "18.0.0"
+                    },
+                    {
+                        "Id": "projectexplorer",
+                        "Version": "18.0.0"
+                    },
+                    {
+                        "Id": "qtsupport",
+                        "Version": "18.0.0"
+                    },
+                    {
+                        "Id": "texteditor",
+                        "Version": "18.0.0"
+                    }
+                ]
+            }
+        }
+    }
+}
