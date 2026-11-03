@@ -1,0 +1,100 @@
+{
+    "$schema": "../../schema/extension.schema.json",
+    "info": {
+        "id": "rosprojectmanager",
+        "vendor_id": "rosindustrial",
+        "display_name": "ROS Project Manager",
+        "display_vendor": "ROS Industrial",
+        "license": "open-source"
+    },
+    "latest": "20.2",
+    "versions": {
+        "20.2": {
+            "sources": [
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/20.2/qtcreator-plugin-ros-20.2-Windows-AMD64.zip",
+                    "sha256": "07bf849fa07acc630ffef18519374268301308145a682b20030d6ef9de8ef5e4",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/20.2/qtcreator-plugin-ros-20.2-Windows-ARM64.zip",
+                    "sha256": "e95857db5c52cf4027d3151e36342c14049919b9a5f6c1a0435e6a1e98f95e0b",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/20.2/qtcreator-plugin-ros-20.2-Linux-x86_64.zip",
+                    "sha256": "10d35fc573c85305d4ace7c628b232dd7572b56349653eb662d8bc81581631ae",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/20.2/qtcreator-plugin-ros-20.2-Linux-aarch64.zip",
+                    "sha256": "525d16bbbfde293879a19e9eefce76371e3ff47271d891e952339bcacce2cbec",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/20.2/qtcreator-plugin-ros-20.2-Darwin-arm64.zip",
+                    "sha256": "edd8cfaad989f50c31075fe9544ccc0971a00d47d17e9d7b65e3555ec11027f6",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "rosprojectmanager",
+                "Name": "ROS Project Manager",
+                "Version": "20.2",
+                "CompatVersion": "20.0.2",
+                "VendorId": "rosindustrial",
+                "Vendor": "ROS Industrial",
+                "Copyright": "(C) 2015 ROS Industrial",
+                "License": "Commercial Usage\n\nLicensees holding valid Qt Commercial licenses may use this plugin in accordance with the Qt Commercial License Agreement provided with the Software or, alternatively, in accordance with the terms contained in a written agreement between you and The Qt Company.\n\nGNU Lesser General Public License Usage\n\nAlternatively, this plugin may be used under the terms of the GNU Lesser General Public License version 2.1 or version 3 as published by the Free Software Foundation.  Please review the following information to ensure the GNU Lesser General Public License requirements will be met: https: //www.gnu.org/licenses/lgpl.html and http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.",
+                "Category": "Build Systems",
+                "Description": "ROS Support.",
+                "Url": "https://github.com/ros-industrial/ros_qtc_plugin",
+                "Dependencies": [
+                    {
+                        "Id": "cmakeprojectmanager",
+                        "Version": "20.0.2"
+                    },
+                    {
+                        "Id": "core",
+                        "Version": "20.0.2"
+                    },
+                    {
+                        "Id": "cppeditor",
+                        "Version": "20.0.2"
+                    },
+                    {
+                        "Id": "debugger",
+                        "Version": "20.0.2"
+                    },
+                    {
+                        "Id": "projectexplorer",
+                        "Version": "20.0.2"
+                    },
+                    {
+                        "Id": "qtsupport",
+                        "Version": "20.0.2"
+                    },
+                    {
+                        "Id": "texteditor",
+                        "Version": "20.0.2"
+                    }
+                ]
+            }
+        }
+    }
+}
