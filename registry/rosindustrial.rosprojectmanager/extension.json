@@ -7,9 +7,9 @@
         "display_vendor": "ROS Industrial",
         "license": "open-source"
     },
-    "latest": "20.2",
+    "latest": "20.0.2",
     "versions": {
-        "20.2": {
+        "20.0.2": {
             "sources": [
                 {
                     "url": "https://github.com/ros-industrial/ros_qtc_plugin/releases/download/20.2/qtcreator-plugin-ros-20.2-Windows-AMD64.zip",
@@ -55,7 +55,7 @@
             "metadata": {
                 "Id": "rosprojectmanager",
                 "Name": "ROS Project Manager",
-                "Version": "20.2",
+                "Version": "20.0.2",
                 "CompatVersion": "20.0.2",
                 "VendorId": "rosindustrial",
                 "Vendor": "ROS Industrial",
