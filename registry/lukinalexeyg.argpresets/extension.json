@@ -1,0 +1,93 @@
+{
+    "$schema": "../../schema/extension.schema.json",
+    "info": {
+        "id": "argpresets",
+        "vendor_id": "lukinalexeyg",
+        "display_name": "ArgPresets",
+        "display_vendor": "lukinalexeyg",
+        "license": "open-source"
+    },
+    "latest": "21.0.0",
+    "versions": {
+        "21.0.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/lukinalexeyg/ArgPresets/releases/download/v21.0.0/ArgPresets-21.0.0-Windows-x64.7z",
+                    "sha256": "132834abe01dd168b563f3a8dece188fbf436c45820dee45255b2ea282c4dc30",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/lukinalexeyg/ArgPresets/releases/download/v21.0.0/ArgPresets-21.0.0-Windows-arm64.7z",
+                    "sha256": "856c157b23f0c67bfd06eb7bb2ad4c383aae4d506da4240f129ad3d593dcfa66",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/lukinalexeyg/ArgPresets/releases/download/v21.0.0/ArgPresets-21.0.0-Linux-x64.7z",
+                    "sha256": "a6e21dd19f95262cef1325182e6f82dbee361d541e2835edcbe47d02c000f85b",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/lukinalexeyg/ArgPresets/releases/download/v21.0.0/ArgPresets-21.0.0-Linux-arm64.7z",
+                    "sha256": "64bcfe63169fc05413ef6668e58a263b8d8f6809e5dff59950af6d1b39daccae",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/lukinalexeyg/ArgPresets/releases/download/v21.0.0/ArgPresets-21.0.0-macOS-universal.7z",
+                    "sha256": "85d7c2c9605abd517f7d3859f0aacea4da86d43ca920e67cabd2d55c7a610c48",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/lukinalexeyg/ArgPresets/releases/download/v21.0.0/ArgPresets-21.0.0-macOS-universal.7z",
+                    "sha256": "85d7c2c9605abd517f7d3859f0aacea4da86d43ca920e67cabd2d55c7a610c48",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "argpresets",
+                "Name": "ArgPresets",
+                "Version": "21.0.0",
+                "CompatVersion": "21.0.0",
+                "Vendor": "lukinalexeyg",
+                "VendorId": "lukinalexeyg",
+                "Copyright": "(C) 2026 lukinalexeyg",
+                "License": "MIT",
+                "Description": "Named command-line argument presets for Qt Creator run configurations.",
+                "LongDescription": [
+                    "Save and switch named argument lines next to Command line arguments on Projects → Run Settings.",
+                    "Optional templates fill {placeholders} before writing into Arguments.",
+                    "Presets are stored per project."
+                ],
+                "Url": "https://github.com/lukinalexeyg/ArgPresets",
+                "DocumentationUrl": "",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "21.0.0"
+                    },
+                    {
+                        "Id": "projectexplorer",
+                        "Version": "21.0.0"
+                    }
+                ]
+            }
+        }
+    }
+}
