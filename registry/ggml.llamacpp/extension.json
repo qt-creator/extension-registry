@@ -7,8 +7,88 @@
         "display_vendor": "ggml-org",
         "license": "open-source"
     },
-    "latest": "3.1.0",
+    "latest": "4.0.0",
     "versions": {
+        "4.0.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/cristianadam/llama.qtcreator/releases/download/v4.0.0/LlamaCpp-4.0.0-Windows-x64.7z",
+                    "sha256": "721d56e17222744f84edb63af11b4a5ef8714f099fc64828b4e5e2df2fa4cdc3",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/llama.qtcreator/releases/download/v4.0.0/LlamaCpp-4.0.0-Windows-arm64.7z",
+                    "sha256": "be3bb2bbff1b37cc1acd64b208438a856ca55944490ec90ff0011487dfdea370",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/llama.qtcreator/releases/download/v4.0.0/LlamaCpp-4.0.0-Linux-x64.7z",
+                    "sha256": "111556453f226e0490a0126382455946ab458e4244b04060de7127224489d5c8",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/llama.qtcreator/releases/download/v4.0.0/LlamaCpp-4.0.0-Linux-arm64.7z",
+                    "sha256": "76b90c11a521a030dbb7b78b53428d15756b144391d2bef1615ab2f91037c7e1",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/llama.qtcreator/releases/download/v4.0.0/LlamaCpp-4.0.0-macOS-universal.7z",
+                    "sha256": "e6c33be5b474d41a08617c1496c2ec70c84026ea3fa05a0ac32105e23a2cce5f",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/llama.qtcreator/releases/download/v4.0.0/LlamaCpp-4.0.0-macOS-universal.7z",
+                    "sha256": "e6c33be5b474d41a08617c1496c2ec70c84026ea3fa05a0ac32105e23a2cce5f",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "llamacpp",
+                "Name": "llama.qtcreator",
+                "Version": "4.0.0",
+                "CompatVersion": "4.0.0",
+                "Vendor": "ggml-org",
+                "VendorId": "ggml",
+                "Copyright": "(C) 2025 The llama.qtcreator Contributors, Copyright (C) The Qt Company Ltd. and other contributors.",
+                "License": "MIT",
+                "Description": "llama.cpp infill completion plugin for Qt Creator",
+                "LongDescription": "# llama.qtcreator\n\nLocal LLM assistance for Qt Creator, powered by a\n[llama.cpp](https://github.com/ggml-org/llama.cpp) server: FIM text\ncompletion in the editor and an agentic chat with a built-in agent harness -\nshell and file tools, web access, skills, subagents and sandboxing -\nrendered with Markdown, Mermaid and KaTeX, no cloud required.\n\n![Qt Creator llama.cpp Text](https://raw.githubusercontent.com/cristianadam/llama.qtcreator/refs/heads/main/screenshots/qtcreator-llamacpp-text.webp)\n\n## Features\n\n### Text completion\n\n- Auto-suggest on cursor movement. Toggle enable / disable with `Ctrl+Shift+G`\n- Trigger the suggestion manually by pressing `Ctrl+G`\n- Accept a suggestion with `Tab`\n- Accept the first line of a suggestion with `Shift+Tab`\n- Control max text generation time\n- Configure scope of context around the cursor\n- Ring context with chunks from open and edited files and yanked text\n- [Supports very large contexts even on low-end hardware via smart context reuse](https://github.com/ggml-org/llama.cpp/pull/9787)\n- Speculative FIM support\n- Speculative Decoding support\n- Display performance stats\n\n### Chat\n\n- Chat support (including [Mermaid](https://mermaid.js.org/) diagrams and [KaTeX](https://katex.org/) math, rendered to SVG with a bundled QuickJS runtime - no browser required)\n- \"Human Editor\" endpoint: select it in the chat's model dropdown to use the chat as a Markdown editor - replies are written by you in a regular text editor opened in a split next to the chat (save to send), and assistant messages can be edited in place the same way\n- Source and Image drag & drop support\n- \"ll\" locator (type `ll` in the locator, or use the selection prompt button in the editor): send the current editor selection to the model with a built-in or custom prompt - prompts support `{selection}`, `{file}`, `{line}`, `{diagnostics}` and `{git_diff}` placeholders, and are editable on the \"Prompts\" settings page\n- Project instructions: the project's `AGENTS.md` / `CLAUDE.md` (searched up to the git repository root) is loaded and appended to the chat system message; can be disabled globally or per project\n- [Skills](https://agentskills.io): configure skill directories on the \"Skills\" settings page; skills (`SKILL.md` files) are advertised to the model and loaded on demand via the `skill` tool\n- Conversations get automatic titles, long conversations are automatically continued in a new conversation seeded with a handoff summary of the task, current state and next steps when they approach the model's context window, and messages sent while a reply is in progress are queued\n- The conversations view supports multi-selection (Ctrl/Shift+click), and the Delete key removes the selected conversations (task conversations nested under a deleted parent are re-parented to the top level)\n- Export a conversation as Markdown or HTML\n\n### Chat tools\n\n- File tools (`read_file`, `write`, `edit_file`, `apply_patch`), code\n  navigation (`search`, `find`, `ls`), `bash`, `get_datetime` / `get_info`\n  (current date/time and working environment), `todo_write`, and `task`\n  (delegates a self-contained subtask to a subagent that works in a\n  separate conversation, shown nested under its parent in the conversation\n  list)\n- Web access: `webfetch` retrieves and reads pages, `websearch` queries\n  Exa, Google, Brave or Tavily (API keys configured on the \"Tools\" settings\n  page)\n- [MCP](https://modelcontextprotocol.io/) support: configure multiple MCP\n  servers on the \"Tools\" settings page and enable their tools individually\n- Sandboxing: optionally run the chat tools in a sandbox (per-project\n  setting) - `bwrap` on Linux, `sandbox-exec` on macOS and\n  [Microsoft MXC](https://github.com/microsoft/mxc) on Windows. Writes are\n  restricted to the project directory and temp locations, credential\n  locations (e.g. `~/.ssh`, `~/.aws`) are denied, and network access is\n  blocked by default; extra writable/readable/deny-read directories and the\n  network policy are configured on the \"Sandbox\" settings page\n\n### llama.cpp setup\n\nThe plugin requires a [llama.cpp](https://github.com/ggml-org/llama.cpp) server instance to be running at:\n\n![Qt Creator llama.cpp Settings](https://raw.githubusercontent.com/cristianadam/llama.qtcreator/refs/heads/main/screenshots/qtcreator-llamacpp-settings.webp)\n\nOr let the plugin manage the server itself: the **Server** settings page\n(Settings > llama.cpp > Server)\n\n- Finds or downloads the runtime (the official llama.cpp install script -\n  the same one the Llama tray apps use, so an existing install is picked\n  up), and starts/stops `llama-server` with a configurable host, port,\n  models directory and extra arguments\n- Shows the server's output (start command line, then the colored log) in\n  a dedicated \"llama.cpp\" pane of the Output window\n- Checks the install channel for newer builds; can start the server when\n  Qt Creator starts (stops it on exit)\n- Lists the server's models with their details, and loads/unloads or\n  removes them\n- \"Download models...\" downloads a model from the llama.app catalog into\n  the server's model cache\n- A \"Models\" submenu in the \"llama.cpp\" menu (Tools > llama.cpp) and in\n  the status icon's context menu lists the server's models - selecting one\n  loads it and makes it the active chat model (selecting it again unloads\n  it) - and starts/stops the managed server\n- A chat API key (Chat settings page), when set, is required by the\n  managed server as well\n\nThe chat's model selection is remembered across restarts, and the\nconfigured FIM and utility models are loaded automatically (the FIM model\non its own server when the FIM endpoint points at a different one).\n\n![Qt Creator llama.cpp Settings](https://raw.githubusercontent.com/cristianadam/llama.qtcreator/refs/heads/main/screenshots/qtcreator-llamacpp-server.webp)\n\n\n### FIM llama.cpp settings\n\nHere are recommended settings, depending on the amount of VRAM that you have:\n\n- More than 16GB VRAM:\n\n  ```bash\n  llama-server --fim-qwen-7b-default\n  ```\n\n- Less than 16GB VRAM:\n\n  ```bash\n  llama-server --fim-qwen-3b-default\n  ```\n\n- Less than 8GB VRAM:\n\n  ```bash\n  llama-server --fim-qwen-1.5b-default\n  ```\n\nUse `llama-server --help` for more details.\n\n\n### Recommended LLMs\n\nThe plugin requires FIM-compatible models for the text completion: [HF collection](https://huggingface.co/collections/ggml-org/llamavim-6720fece33898ac10544ecf9)\n\nThe chat works with any chat model supported by `llama-server` (a separate\nendpoint can be configured for it).\n\n## Examples\n\n### Chat on a Mac Studio M2 with `gpt-oss 20B`:\n\n![Qt Creator llama.cpp Chat](https://raw.githubusercontent.com/cristianadam/llama.qtcreator/refs/heads/main/screenshots/qtcreator-llamacpp-chat.webp)\n\n## Other IDEs\n\n- Vim/Neovim: https://github.com/ggml-org/llama.vim\n- VS Code: https://github.com/ggml-org/llama.vscode\n",
+                "Url": "https://github.com/ggml-org/llama.qtcreator",
+                "DocumentationUrl": "",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "21.0.0"
+                    },
+                    {
+                        "Id": "projectexplorer",
+                        "Version": "21.0.0"
+                    },
+                    {
+                        "Id": "texteditor",
+                        "Version": "21.0.0"
+                    }
+                ]
+            }
+        },
         "3.1.0": {
             "sources": [
                 {
