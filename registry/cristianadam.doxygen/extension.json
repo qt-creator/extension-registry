@@ -7,8 +7,123 @@
         "display_vendor": "Cristian Adam",
         "license": "open-source"
     },
-    "latest": "18.0.0",
+    "latest": "21.0.0",
     "versions": {
+        "21.0.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-doxygen/releases/download/v21.0.0/DoxygenPlugin-21.0.0-Windows-x64.7z",
+                    "sha256": "a704f982a6cf53a0cf0a32691b8fd87efd876a0a71c61f0611db6f34b4cf63a9",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-doxygen/releases/download/v21.0.0/DoxygenPlugin-21.0.0-Windows-arm64.7z",
+                    "sha256": "ebdd03707844d40d4621c97a121ad1f65aeadfc140d043310d16cb9a45bdf904",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-doxygen/releases/download/v21.0.0/DoxygenPlugin-21.0.0-Linux-x64.7z",
+                    "sha256": "2c56b57fa7aedaa82b2da200080fa5437fa16c1cee6dec742f3ccab26ed8acd8",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-doxygen/releases/download/v21.0.0/DoxygenPlugin-21.0.0-Linux-arm64.7z",
+                    "sha256": "0bad9f189a9ea25cbac028cfb1c171048d566292db77941414af75b0848ba430",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-doxygen/releases/download/v21.0.0/DoxygenPlugin-21.0.0-macOS-universal.7z",
+                    "sha256": "13fbd4ee465858911b617f7d1228fd25fecb85b4e6e70e3d71b5f87fc8488a17",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-doxygen/releases/download/v21.0.0/DoxygenPlugin-21.0.0-macOS-universal.7z",
+                    "sha256": "13fbd4ee465858911b617f7d1228fd25fecb85b4e6e70e3d71b5f87fc8488a17",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "doxygen",
+                "Name": "Doxygen",
+                "Version": "21.0.0",
+                "CompatVersion": "21.0.0",
+                "Vendor": "Cristian Adam",
+                "VendorId": "cristianadam",
+                "Copyright": "(C) 2015 Fabien Poussin, Cristian Adam, Copyright (C) The Qt Company Ltd. and other contributors.",
+                "License": "GNU LGPL 2.1",
+                "Description": "Doxygen documentation support for Qt Creator.",
+                "LongDescription": [
+                    "# qt-creator-doxygen",
+                    "Doxygen Plugin for Qt Creator",
+                    "",
+                    "# Screencast",
+                    "",
+                    "![qt-creator-doxygen.webp](https://raw.githubusercontent.com/cristianadam/qt-creator-doxygen/refs/heads/master/qt-creator-doxygen.webp)",
+                    "",
+                    "# License",
+                    "",
+                    "LGPL 2.1.",
+                    "",
+                    "```",
+                    "Doxygen Plugin",
+                    "",
+                    "Copyright (c) 2015 Fabien Poussin",
+                    "Copyright (c) 2009 Kevin Tanguy",
+                    "",
+                    "This plugin is free software: you can redistribute it and/or modify",
+                    "it under the terms of the GNU Lesser General Public License as",
+                    "published by the Free Software Foundation, either version 2.1",
+                    "of the License, or (at your option) any later version.",
+                    "",
+                    "This plugin is distributed in the hope that it will be useful,",
+                    "but WITHOUT ANY WARRANTY; without even the implied warranty of",
+                    "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the",
+                    "GNU Lesser General Public License for more details.",
+                    "",
+                    "You should have received a copy of the GNU General Public License",
+                    "along with Doxygen Plugin. If not, see <http://www.gnu.org/licenses/>.",
+                    "```"
+                ],
+                "Url": "https://github.com/cristianadam/qt-creator-doxygen",
+                "DocumentationUrl": "",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "21.0.0"
+                    },
+                    {
+                        "Id": "projectexplorer",
+                        "Version": "21.0.0"
+                    },
+                    {
+                        "Id": "cppeditor",
+                        "Version": "21.0.0"
+                    },
+                    {
+                        "Id": "texteditor",
+                        "Version": "21.0.0"
+                    }
+                ]
+            }
+        },
         "18.0.0": {
             "sources": [
                 {
