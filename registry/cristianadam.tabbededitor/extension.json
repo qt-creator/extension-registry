@@ -7,8 +7,98 @@
         "display_vendor": "Cristian Adam",
         "license": "open-source"
     },
-    "latest": "20.0.0",
+    "latest": "21.0.0",
     "versions": {
+        "21.0.0": {
+            "sources": [
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-tabbededitor/releases/download/v21.0.0/TabbedEditorPlugin-21.0.0-Windows-x64.7z",
+                    "sha256": "ba96f99db78a8bbfd553a89689c197d1e90be2a1a99fda7f7a4e4abc9aab8143",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-tabbededitor/releases/download/v21.0.0/TabbedEditorPlugin-21.0.0-Windows-arm64.7z",
+                    "sha256": "a43be55535c898a51f64b5f5f3dc50f232b85a0f7822924b8d49209ce88d9b91",
+                    "platform": {
+                        "name": "Windows",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-tabbededitor/releases/download/v21.0.0/TabbedEditorPlugin-21.0.0-Linux-x64.7z",
+                    "sha256": "5facb5e1f8f24dbbdde8f61e099d249436c15445b02ce25d4b8d9ab1bff0c194",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-tabbededitor/releases/download/v21.0.0/TabbedEditorPlugin-21.0.0-Linux-arm64.7z",
+                    "sha256": "e230d92abbe0fe7d325c652631db1ee443e129e9a1a7f0305863376332380cca",
+                    "platform": {
+                        "name": "Linux",
+                        "architecture": "arm64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-tabbededitor/releases/download/v21.0.0/TabbedEditorPlugin-21.0.0-macOS-universal.7z",
+                    "sha256": "80c1c0543d53cae6eadcb66cce1d042cd25354144e0b8b20603ca6f1bc7c8739",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "x86_64"
+                    }
+                },
+                {
+                    "url": "https://github.com/cristianadam/qt-creator-tabbededitor/releases/download/v21.0.0/TabbedEditorPlugin-21.0.0-macOS-universal.7z",
+                    "sha256": "80c1c0543d53cae6eadcb66cce1d042cd25354144e0b8b20603ca6f1bc7c8739",
+                    "platform": {
+                        "name": "macOS",
+                        "architecture": "arm64"
+                    }
+                }
+            ],
+            "metadata": {
+                "Id": "tabbededitor",
+                "Name": "TabbedEditor",
+                "Version": "21.0.0",
+                "CompatVersion": "21.0.0",
+                "Vendor": "Cristian Adam",
+                "VendorId": "cristianadam",
+                "Copyright": "(C) 2015 Oleg Shparber, Cristian Adam, Copyright (C) The Qt Company Ltd. and other contributors.",
+                "License": "LGPLv3",
+                "Description": "Add tabs to Qt Creator",
+                "LongDescription": [
+                    "# Qt Creator Tabbed Editor Plugin",
+                    "",
+                    "The aim of this project is to provide a tab-based experience in [Qt Creator](https://www.qt.io/product/development-tools).",
+                    "",
+                    "# Screenshots",
+                    "",
+                    "![qt-creator-tabbededitor-light.png](https://raw.githubusercontent.com/cristianadam/qt-creator-tabbededitor/refs/heads/master/screenshots/qt-creator-tabbededitor-light.png)",
+                    "",
+                    "![qt-creator-tabbededitor-dark.png](https://raw.githubusercontent.com/cristianadam/qt-creator-tabbededitor/refs/heads/master/screenshots/qt-creator-tabbededitor-dark.png)",
+                    "",
+                    "## Copyright / License",
+                    "",
+                    "Copyright (C) 2015 Oleg Shparber",
+                    "",
+                    "This software is available under the terms of the GNU Lesser General Public License version 3 (LGPLv3).",
+                    "",
+                    "This project is a fork of [QtCreator Tabbed Editor Plugin](https://sourceforge.net/projects/tabbededitor/) by SNA Soft."
+                ],
+                "Url": "https://github.com/cristianadam/qt-creator-tabbededitor",
+                "DocumentationUrl": "",
+                "Dependencies": [
+                    {
+                        "Id": "core",
+                        "Version": "21.0.0"
+                    }
+                ]
+            }
+        },
         "20.0.0": {
             "sources": [
                 {
